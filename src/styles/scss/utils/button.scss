@@ -1,0 +1,26 @@
+/*Button
+=================
+ */
+.btn{
+  display: inline-block;
+  vertical-align: top;
+  font:{
+    weight: 600;
+    size: 13px;
+  }
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14px 40px;
+  border-radius: 2px;
+  font-family: $ral_R;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.1s linear;
+}
+.btn--red{
+  background-color: #e84545;
+  &:hover{
+    background-color: #a83434;
+  }
+}

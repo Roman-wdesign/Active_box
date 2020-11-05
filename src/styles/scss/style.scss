@@ -1,0 +1,47 @@
+@import "utils/reset";
+@import "utils/vars";
+@import "utils/fonts";
+@import "utils/nav";
+@import "utils/intro";
+@import "utils/button";
+@import "utils/features";
+@import "utils/works";
+@import "utils/team";
+
+body{
+  margin: 0;
+  color: #6c7279;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  font: {
+    family: $ral_R;
+    size: 14px;
+  }
+}
+
+.container{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+
+}
+
+/*Header
+=================
+ */
+.header{
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #515369;
+  padding: 35px 0;
+  align-items: center;
+}
+
