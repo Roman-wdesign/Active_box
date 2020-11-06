@@ -7,6 +7,8 @@
 @import "utils/features";
 @import "utils/works";
 @import "utils/team";
+@import "utils/social";
+@import "utils/testimonials";
 
 body{
   margin: 0;
@@ -21,9 +23,9 @@ body{
 
 .container{
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
-
+  padding: 0 15px;
 }
 
 /*Header
