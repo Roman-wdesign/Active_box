@@ -1,23 +1,10 @@
-# Webpack_my_bundle
-Bundle for your comfortable work;
 
-More information in package.json;
-
-NO /dist folder for  your fast downloading;
-
-#  Install dependencies:
-npm install
+# How to install Jquery in Webpack
 
 
-# Start server:
-npm start
+### Steps:
 
-# Build:
-npm run build
+* npm i jquery --save
 
-Create dist folder(compressed code)
-
-
-# Development:
-npm run dev
-Create dist folder(no-compressed code)
+* Create first.js (with your code), for example in src/models/first.js
+* Import first.js to Index.js 
