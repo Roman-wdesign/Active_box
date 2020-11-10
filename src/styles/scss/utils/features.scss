@@ -12,16 +12,22 @@
   padding: 0 40px;
   margin: 25px 0;
 }
+
 .features__icon{
   margin-bottom: 25px;
 }
+
 .features__title{
   margin-bottom: 20px;
-  font-size: 14px;
   color: #2d3033;
-  font-weight: bold;
   text-transform: uppercase;
+
+  font:{
+    size: 14px;
+    weight: 700;
+  }
 }
+
 .features__text{
   font-size: 14px;
   color: #6c7279;

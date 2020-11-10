@@ -11,6 +11,7 @@
   url($path-img + 'Layer_34.png');
   object-fit: cover;
 }
+
 .intro__inner{
   width: 100%;
   max-width: 970px;
@@ -20,10 +21,11 @@
 
 .intro__title{
   font: {
-    family: 'Open Sans_Bold', sans-serif;
+    family: $op_B , sans-serif;
     size: 65px;
     weight: 700;
   }
+
   color: #fff;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -34,6 +36,7 @@
 color: #fff;
   line-height: 1.5;
   margin-bottom: 60px;
+
   font:{
     size: 22px;
     weight: 400;

@@ -1,0 +1,35 @@
+/*Download
+=================
+ */
+
+.download{
+  margin: 90px 0;
+  text-align: center;
+}
+
+.download__title{
+  font:{
+    size: 28px;
+    weight: 300;
+  }
+
+  color: #2d3033;
+  margin-bottom: 10px;
+
+}
+
+.download__text{
+
+  font:{
+    size: 13px;
+    weight: 700;
+  }
+
+  color: #2d3033;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+}
+.btn--long{
+  min-width: 280px;
+}

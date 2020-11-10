@@ -3,6 +3,25 @@
  */
 .social{
   display: flex;
+}
+
+.social--footer{
+  justify-content: center;
+
+  & .social__icon{
+    fill: #ffffff;
+  }
+
+  & .social__item{
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-radius: 2px;
+
+    &:hover{
+      background-color: #ffffff;
+    }
+  }
 
 }
 
@@ -30,6 +49,9 @@
   height: 18px;
   transition: fill 0.1s linear;
 }
+
+
+
 
 
 
