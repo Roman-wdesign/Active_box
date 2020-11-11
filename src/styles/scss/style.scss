@@ -42,7 +42,20 @@ body{
   top: 0;
   left: 0;
   z-index: 100;
+
 }
+.header.fixed{
+  height: auto;
+  position: fixed;
+  background: #31344e;
+}
+
+.header.fixed .header__inner{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 0;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -114,7 +127,10 @@ body{
 @media (max-width: 991px){
   /* Nav*/
 .nav{
-  display: none;
+  //display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
 }
   .burger{
     display: block;
