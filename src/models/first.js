@@ -1,4 +1,7 @@
-import $ from "jquery";
+import $ from 'jquery';
+import 'slick-carousel';
+
+
 
 //Fixed Header
 
@@ -7,6 +10,8 @@ $(function () {
     let intro = $("#intro");
     let introH = intro.innerHeight();
     let scrollPos = $(window).scrollTop();
+
+
 
     checkScroll(scrollPos, introH);
 
@@ -34,10 +39,42 @@ $(function () {
        let elementID = $(this).data('scroll');
        let elementOffset = $(elementID).offset().top;
 
-       console.log(elementOffset);
+       nav.removeClass("show");
+
+
 
        $('html, body').animate({
            scrollTop: elementOffset - 70
        }, 500);
    });
+
+    //Nav Toggle
+
+     let nav = $("#nav");
+     let navToggle = $("#navToggle");
+
+    navToggle.on ("click", function (e) {
+        e.preventDefault();
+        nav.toggleClass("show");
+    });
+
+    //Reviews
+
+
+
+});
+$(document).ready(function () {
+
+    $('.reviews__slider').slick({
+
+        infinite: true,
+        arrows: false,
+        dots: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        easing:'ease',
+        initialSlide: 0,
+    });
+
 });

@@ -12,7 +12,10 @@
   "browserslist": "> 0.25%, not dead",
   "keywords": [
     "js",
-    "webpack"
+    "webpack",
+    "jquery",
+    "slick",
+    "slick-carousel"
   ],
   "author": "Roman <klauss.elephant@gmail.com>",
   "license": "ISC",
@@ -50,6 +53,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
     "jquery": "^3.5.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1"
   }
 }

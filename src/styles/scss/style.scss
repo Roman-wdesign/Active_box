@@ -1,6 +1,12 @@
 @import "utils/reset";
 @import "utils/vars";
 @import "utils/fonts";
+
+
+//@import "slickfix";
+//@import "~slick-carousel/slick/slick.scss";
+//@import "~slick-carousel/slick/slick-theme.scss";
+
 @import "utils/nav";
 @import "utils/intro";
 @import "utils/button";
@@ -12,6 +18,9 @@
 @import "utils/download";
 @import "utils/footer";
 @import "utils/copyright";
+
+
+
 
 body{
   margin: 0;
@@ -127,11 +136,24 @@ body{
 @media (max-width: 991px){
   /* Nav*/
 .nav{
-  //display: none;
+  display: none;
+  background-color: #31344e;
+  width: 100%;
+  text-align: right;
+  flex-direction: column;
   position: absolute;
   right: 0;
   top: 100%;
+
+  &.show{
+    display: flex;
+  }
 }
+
+  .nav__link{
+    padding: 9px 15px;
+  }
+
   .burger{
     display: block;
   }
@@ -257,3 +279,61 @@ body{
     right: -100px;
   }
 }
+
+.reviews__slider{
+
+}
+/* Slick */
+
+.slick-list {
+  overflow: hidden;
+}
+.slick-track{
+  display: flex;
+}
+
+
+.slick-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 10px;
+  list-style: none;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+
+}
+.slick-dots li{
+  margin: 0 5px;
+}
+
+
+ .slick-dots button{
+   width: 15px;
+   height: 15px;
+  background: #ffffff;
+   border-radius: 50%;
+   opacity: 0.5;
+   border: 0;
+   padding: 0;
+   font-size: 0;
+   color: transparent;
+   cursor: pointer;
+   &:focus{
+     outline: 0;
+   }
+}
+.slick-dots .slick-active button{
+  opacity: 1;
+}
+
