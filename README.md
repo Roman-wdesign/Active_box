@@ -1,9 +1,5 @@
-# Webpack_my_bundle
-Bundle for your comfortable work;
-
-More information in package.json;
-
-NO /dist folder for  your fast downloading;
+# Active_box
+Just simple page for my repository
 
 #  Install dependencies:
 npm install
