@@ -16,4 +16,5 @@ Create dist folder(compressed code)
 
 # Development:
 npm run dev
+
 Create dist folder(no-compressed code)
