@@ -14,5 +14,16 @@
   margin: $svg_m;
   background-repeat: no-repeat;
   background-position: center;
+}
 
+@mixin flex_1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin flex_2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

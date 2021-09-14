@@ -14,10 +14,8 @@
 
 
   &__sprite {
-    display: flex;
-    flex-direction: column;
+    @include flex_2;
     justify-content: flex-start;
-    align-items: center;
 
     &_logo {
       cursor: pointer;
@@ -54,18 +52,21 @@
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include flex_1;
+
+  justify-content: space-between;
   font: {
     family: $font_pop_b;
     color: #717579;
   };
 
+  &__left {
+    @include flex_1;
+
+  }
+
   &__title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
     font: {
       family: $font_pop_b;
       color: $Primary_Text;
@@ -73,6 +74,7 @@
   }
 
   &__button {
+
     &__btn {
       h6 {
         color: $Secondary_Text;
@@ -84,4 +86,10 @@
       };
     }
   }
+}
+#cars{
+  border-radius: 50px;
+  outline: none;
+  border: 2px solid #E3EBF1;
+  background: transparent;
 }
