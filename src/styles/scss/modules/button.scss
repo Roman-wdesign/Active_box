@@ -1,0 +1,13 @@
+button {
+
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}

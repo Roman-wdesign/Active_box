@@ -1,25 +1,26 @@
 
+//@font-face {
+//  font-family: 'Open Sans_Bold';
+//  src: url($path-font_OS  + "OpenSans-Bold.ttf");
+//}
+
 @font-face {
-  font-family: 'Open Sans_Bold';
-  src: url($path-font_OS  + "OpenSans-Bold.ttf");
+  font-family: 'Poppins-Bold';
+  src: url($path-font  + "Poppins-Bold.ttf");
 }
 @font-face {
-  font-family: 'Open Sans_Regular';
-  src: url($path-font_OS  + "OpenSans-Regular.ttf");
+  font-family: 'Poppins-Light';
+  src: url($path-font  + "Poppins-Light.ttf");
 }
 @font-face {
-  font-family: 'Cardo';
-  src: url($path-font_CR + "Cardo-Italic.ttf");
+  font-family: 'Poppins-Medium';
+  src: url($path-font  + "Poppins-Medium.ttf");
 }
 @font-face {
-  font-family: 'Raleway_Bold';
-  src: url($path-font_RL + "Raleway-Bold.ttf");
+  font-family: 'Poppins-Regular';
+  src: url($path-font  + "Poppins-Regular.ttf");
 }
 @font-face {
-  font-family: 'Raleway_Light';
-  src: url($path-font_RL + "Raleway-Light.ttf");
-}
-@font-face {
-  font-family: 'Raleway_Regular';
-  src: url($path-font_RL + "Raleway-Regular.ttf");
+  font-family: 'Poppins-SemiBold';
+  src: url($path-font  + "Poppins-SemiBold.ttf");
 }

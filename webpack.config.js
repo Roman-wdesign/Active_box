@@ -1,46 +1,47 @@
-const path= require('path');
+const path = require('path');
 const webpack = require('webpack');
-const HTMLWebpackPlugin= require('html-webpack-plugin');
-const{CleanWebpackPlugin} =require('clean-webpack-plugin');
-const CopyPlugin= require('copy-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 
+
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
 
-const optimization= () => {
+const optimization = () => {
 
     const configOptimization = {
-            splitChunks:{
-                chunks:'all'
-            }
+        splitChunks: {
+            chunks: 'all'
         }
+    }
 
-        if (isProd){
-            configOptimization.minimizer= [
-              new  OptimizeCssAssetsPlugin(),
-                new TerserWebpackPlugin()
-            ]
-        }
+    if (isProd) {
+        configOptimization.minimizer = [
+            new OptimizeCssAssetsPlugin(),
+            new TerserWebpackPlugin()
+        ]
+    }
 
-        return configOptimization
+    return configOptimization
 }
 
-const filename= ext => isDev ? `[name].${ext}`: `[name].[hash].${ext}`;
-const cssLoaders= extra => {
-const loaders =  [
-    {
-        loader: MiniCssExtractPlugin.loader,
-        options: {
-            hmr: isDev,
-            reloadAll: true
+const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`;
+const cssLoaders = extra => {
+    const loaders = [
+        {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+                hmr: isDev,
+                reloadAll: true
+            },
         },
-    },
-    'css-loader'
-]
-    if(extra) {
+        'css-loader'
+    ]
+    if (extra) {
         loaders.push(extra)
     }
 
@@ -48,13 +49,11 @@ const loaders =  [
 }
 
 
-
 module.exports = {
-    context: path.resolve(__dirname,'src'),
+    context: path.resolve(__dirname, 'src'),
     mode: 'development',
-    entry:{
-        main:['@babel/polyfill','./index.js'],
-       analytics:'./analytics.ts'
+    entry: {
+        main: ['@babel/polyfill', './index.js']
     },
     output: {
         filename: filename('js'),
@@ -63,7 +62,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.json'],
         alias: {
-          '@models': path.resolve(__dirname, 'src/models'),
+            '@models': path.resolve(__dirname, 'src/models'),
             '@': path.resolve(__dirname, 'src'),
         }
     },
@@ -72,7 +71,7 @@ module.exports = {
         port: 4200,
         hot: isDev
     },
-    devtool: isDev ?  'source-map' : '',
+    devtool: isDev ? 'source-map' : '',
     plugins: [
         new HTMLWebpackPlugin({
             template: "./index.html",
@@ -83,20 +82,21 @@ module.exports = {
         new CleanWebpackPlugin(),
         new CopyPlugin({
 
-           patterns: [
+            patterns: [
                 {
-                from:path.resolve(__dirname,'src/favicon.ico'),
-                to: path.resolve(__dirname,'dist')
-            },
+                    from: path.resolve(__dirname, 'src/favicon.ico'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+
             ]
-}),
+        }),
         new MiniCssExtractPlugin({
-            filename:filename('css'),
+            filename: filename('css'),
         }),
         new webpack.ProvidePlugin({
-            $ : 'jquery',
-            jQuery : 'jquery',
-            'window.jQuery' : 'jquery'
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
 
         })
     ],
@@ -104,7 +104,7 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use:cssLoaders()
+                use: cssLoaders()
             },
             {
                 test: /\.less$/,
@@ -147,7 +147,7 @@ module.exports = {
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: ['@babel/preset-env','@babel/preset-typescript'],
+                        presets: ['@babel/preset-env', '@babel/preset-typescript'],
                         plugins: ['@babel/plugin-proposal-class-properties']
                     }
                 }

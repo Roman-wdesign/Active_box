@@ -1,0 +1,87 @@
+
+.sidebar {
+
+  width: $sidebar-width;
+  height: 100vh;
+
+  background-color: $Background;
+  box-shadow: 5px 0 15px rgba(#050505, 0.1);
+
+  position: fixed;
+
+  left: 0;
+  z-index: $z-index-sidebar;
+
+
+  &__sprite {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &_logo {
+      cursor: pointer;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      margin: 3.4rem 0 8.6rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url($path-ico + 'logo.svg');
+    }
+
+    &_calendar {
+
+      @include svg_s;
+      background-image: url($path-ico + 'Calendar.svg');
+    }
+
+    &_home {
+      @include svg_s;
+      background-image: url($path-ico + 'Home.svg');
+    }
+
+    &_list {
+      @include svg_s;
+      background-image: url($path-ico + 'List.svg');
+    }
+
+    &_todo {
+      @include svg_s;
+      background-image: url($path-ico + 'todo.svg');
+    }
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font: {
+    family: $font_pop_b;
+    color: #717579;
+  };
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font: {
+      family: $font_pop_b;
+      color: $Primary_Text;
+    };
+  }
+
+  &__button {
+    &__btn {
+      h6 {
+        color: $Secondary_Text;
+      }
+
+      font: {
+        family: $font_pop_b;
+
+      };
+    }
+  }
+}

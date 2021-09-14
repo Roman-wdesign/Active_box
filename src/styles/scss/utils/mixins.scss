@@ -1,0 +1,18 @@
+@mixin Shadow1_Sidebar{
+  background: #C4C4C4;
+  box-shadow: 7px 0px 80px rgba(0, 0, 0, 0.05);
+}
+
+@mixin Shadow2_Card{
+  background: #C4C4C4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+}
+
+@mixin svg_s{
+  width: $svg_s;
+  height: $svg_s;
+  margin: $svg_m;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}

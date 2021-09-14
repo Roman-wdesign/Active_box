@@ -1,39 +1,48 @@
 
 //Path img
 $path-img                 : '../../assets/img/';
-$path-ico                 : '../../assets/icons/';
+$path-ico                 : '../../assets/icons/svg/';
 
 
 
 
 //Path fonts
-$path-font_OS             : '../../assets/fonts/Open_Sans/';
-$path-font_CR             : '../../assets/fonts/Cardo/';
-$path-font_RL             : '../../assets/fonts/Raleway/static/';
+$path-font            : '../../assets/fonts/';
 
-// OpenSans
-$op_R                     : 'Open Sans_Regular';
-$op_B                     : 'Open Sans_Bold';
+// Fonts
+$font_pop_b:'Poppins-Bold';
+$font_pop_l:'Poppins-Light';
+$font_pop_m:'Poppins-Medium';
+$font_pop_r:'Poppins-Regular';
+$font_pop_s:'Poppins-SemiBold';
 
-$op_R_13                  : 13px;
-$op_B_65                  : 65px;
+//colors
 
-// Cardo
-$crd                       : 'Cardo';
+$primary: #886CC0;
+$secondary: #FFCF6D;
+$Tertiary: #FFA7D7;
+$Blue:  #2251F8;
 
-$crd_14                    : 14px;
+$Primary_Text:  #171B1E;
+$Secondary_Text: #717579;
+$Tertiary_Text: #D7D7D7;
+
+$Light: #EEEEEE;
+$Background: #FBFBFB;
+$White: #FFFFFF;
+$Primary_Highlight: #F1EAFF;
+
+$Green: #09BD3C;
+$Red: #FC2E53;
+
+//Effects Style in mixins.scss
 
 
-// Raleway
-$ral_L                     : 'Raleway_Light';
-$ral_R                     : 'Raleway_Regular', san-serif;
-$ral_B                     : 'Raleway_Bold';
-
-$ral_L_28                  : 28px;
-$ral_R_14                  : 14px;
-$ral_B_22                  : 14px;
+$z-index-sidebar: 1000;
+$sidebar-width: 160px;
 
 
+//mixins
 
-
-
+$svg_s: 32px;
+$svg_m: 2.6rem 0;
