@@ -1,0 +1,135 @@
+.header {
+  padding: 0 5px;
+  position: fixed;
+  width: calc(100% - #{$sidebar-width});
+  @include flex_1;
+  justify-content: space-between;
+  font: {
+    color: #717579;
+  };
+
+  &__left {
+    @include flex_1;
+  }
+
+  &__mid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &_icons {
+      display: flex;
+      flex-direction: row;
+
+    }
+    &_notif {
+      display: flex;
+      flex-direction: row;
+      margin-top: -7px;
+    }
+
+    &__sprite {
+      display: flex;
+      flex-direction: row;
+
+      &_bell {
+        margin-right: -25px;
+        margin-top: 7px;
+        @include svg_h;
+        background-image: url($path-ico + 'bell.svg');
+
+        &_notif_default {
+
+          @include svg_h;
+          background-image: url($path-ico + 'notif_default.svg');
+        }
+      }
+
+      &_email {
+        margin-right: -25px;
+        margin-top: 7px;
+        @include svg_h;
+        background-image: url($path-ico + 'email.svg');
+
+        &_warning {
+          @include svg_h;
+          background-image: url($path-ico + 'warning.svg');
+        }
+      }
+
+      &_settings {
+        @include svg_h;
+        background-image: url($path-ico + 'settings.svg');
+
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &_container {
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_avatar {
+      margin-right: 18px;
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      border: none;
+      background-color: $Old_Blue_2;
+
+    }
+
+    &_chevron {
+      margin-left: 5px;
+      @include svg_h;
+      background-image: url($path-ico + 'ic_chevron.svg');
+    }
+  }
+
+  &__button {
+    border-radius: 50px;
+    margin: 0 50px;
+    padding: 10px;
+    background-color: $Primary_Highlight;
+
+    &__btn {
+      h6 {
+        color: $Secondary_Text;
+      }
+
+      &_active {
+        color: $White;
+        margin: 0 30px;
+        border-radius: 16px;
+        padding: 10px 20px;
+        background-color: $secondary_active;
+      }
+    }
+  }
+}
+
+.header__left {
+  padding: 0 0 0 165px;
+}
+//
+//.header__mid {
+//  padding: 0 120px 0 120px;
+//}
+//
+//.header__right {
+//  padding: 0 0 0 10px;
+//}
+
+#dropdown {
+  border-radius: 50px;
+  outline: none;
+  border: 2px solid #E3EBF1;
+  background: transparent;
+}
