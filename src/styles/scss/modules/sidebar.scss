@@ -56,7 +56,7 @@
 
   justify-content: space-between;
   font: {
-    family: $font_pop_b;
+
     color: #717579;
   };
 
@@ -65,12 +65,68 @@
 
   }
 
-  &__title {
+  &__mid {
+    display: flex;
+    flex-direction: row;
 
-    font: {
-      family: $font_pop_b;
-      color: $Primary_Text;
-    };
+    &_notif {
+      display: flex;
+      flex-direction: row;
+      margin-top: -7px;
+    }
+
+    &__sprite {
+      display: flex;
+      flex-direction: row;
+
+      &_bell {
+        margin-right: -25px;
+        margin-top: 7px;
+        @include svg_h;
+        background-image: url($path-ico + 'bell.svg');
+
+        &_notif_default {
+
+          @include svg_h;
+          background-image: url($path-ico + 'notif_default.svg');
+        }
+      }
+
+      &_email {
+        margin-right: -25px;
+        margin-top: 7px;
+        @include svg_h;
+        background-image: url($path-ico + 'email.svg');
+
+        &_warning {
+          @include svg_h;
+          background-image: url($path-ico + 'warning.svg');
+        }
+      }
+
+      &_settings {
+        @include svg_h;
+        background-image: url($path-ico + 'settings.svg');
+
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    &_avatar {
+      width: 5.455rem;
+      height: 5.455rem;
+      border-radius: 100%;
+      border: none ;
+      background-color: $Old_Blue_2;
+
+    }
+    &_chevron{
+      @include svg_h;
+      background-image: url($path-ico + 'ic_chevron.svg');
+    }
   }
 
   &__button {
@@ -79,15 +135,11 @@
       h6 {
         color: $Secondary_Text;
       }
-
-      font: {
-        family: $font_pop_b;
-
-      };
     }
   }
 }
-#cars{
+
+#dropdown {
   border-radius: 50px;
   outline: none;
   border: 2px solid #E3EBF1;

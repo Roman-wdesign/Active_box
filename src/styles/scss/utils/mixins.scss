@@ -15,6 +15,13 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@mixin svg_h{
+  width: $svg_s;
+  height: $svg_s;
+  background-size: $bg_size;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 @mixin flex_1{
   display: flex;

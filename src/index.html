@@ -22,30 +22,6 @@
     <title>JetPack</title>
 </head>
 <body>
-<!---------------------- Header ----------------------------->
-<header class="header">
-    <div class="header__left">
-        <h1 class="header__title">Projects</h1>
-        <div class="header__button">
-            <button class="header__button__btn"><h6>Roadmap</h6></button>
-            <button class="header__button__btn"><h6>Kanban</h6></button>
-            <button class="header__button__btn"><h6>List</h6></button>
-        </div>
-        <div class="header__mid">
-            <div class="dropdown">
-                <select name="cars" id="cars">
-                    <option value="volvo">All projects</option>
-                    <option value="saab">Second</option>
-                    <option value="opel">Third</option>
-                    <option value="audi">Fourth</option>
-                </select>
-            </div>
-        </div>
-    </div>
-
-
-</header>
-<div id="root"></div>
 <aside class="sidebar">
     <!--Sprite-->
 
@@ -61,6 +37,48 @@
         </div>
     </div>
 </aside>
+<!---------------------- Header ----------------------------->
+<header class="header">
 
+    <div class="header__left">
+        <h1 class="header__title">Projects</h1>
+        <div class="header__button">
+            <button class="header__button__btn"><h6>Roadmap</h6></button>
+            <button class="header__button__btn"><h6>Kanban</h6></button>
+            <button class="header__button__btn"><h6>List</h6></button>
+        </div>
+    </div>
+    <div class="header__mid">
+        <div class="dropdown">
+            <select name="dropdown" id="dropdown">
+                <option value="All projects">All projects</option>
+                <option value="Second">Second</option>
+                <option value="Third">Third</option>
+                <option value="Fourth">Fourth</option>
+            </select>
+
+        </div>
+        <div class="header__mid">
+            <button class="header__mid_notif">
+                <div class="header__mid__sprite_bell"></div>
+                <div class="header__mid__sprite_bell_notif_default"></div>
+            </button>
+            <button class="header__mid_notif">
+                <div class="header__mid__sprite_email"></div>
+                <div class="header__mid__sprite_email_warning"></div>
+            </button>
+
+            <button class="header__mid__sprite_settings"></button>
+        </div>
+    </div>
+    <div class="header__right">
+        <div class="header__right_avatar"></div>
+        <div class="header__right_container">
+            <h5>Madison Eve</h5>
+            <p>Admin</p>
+        </div>
+        <div class="header__right_chevron"></div>
+    </div>
+</header>
 </body>
 </html>

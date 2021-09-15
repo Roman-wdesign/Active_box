@@ -28,11 +28,10 @@ $Light: #EEEEEE;
 $Background: #FBFBFB;
 $White: #FFFFFF;
 $Primary_Highlight: #F1EAFF;
+$Old_Blue_2: #6F96AA;
 
 $Green: #09BD3C;
 $Red: #FC2E53;
-
-//Effects Style in mixins.scss
 
 
 $z-index-sidebar: 1000;
@@ -42,4 +41,7 @@ $sidebar-width: 160px;
 //mixins
 
 $svg_s: 32px;
+$svg_h: 30px;
 $svg_m: 2.6rem 0;
+
+$bg_size: 55%;
