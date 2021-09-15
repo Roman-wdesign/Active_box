@@ -1,5 +1,5 @@
-# Active_box
-Just simple page for my repository
+# JetPack
+
 
 #  Install dependencies:
 npm install

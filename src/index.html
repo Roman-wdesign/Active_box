@@ -23,7 +23,7 @@
 </head>
 <body>
 <aside class="sidebar">
-    <!--Sprite-->
+    <!--Sidebar-->
 
     <div class="sidebar__sprite">
 
@@ -37,48 +37,67 @@
         </div>
     </div>
 </aside>
-<!---------------------- Header ----------------------------->
-<header class="header">
 
-    <div class="header__left">
-        <h1 class="header__title">Projects</h1>
-        <div class="header__button">
-            <button class="header__button__btn"><h6>Roadmap</h6></button>
-            <button class="header__button__btn_active"><h6>Kanban</h6></button>
-            <button class="header__button__btn"><h6>List</h6></button>
-        </div>
-    </div>
-    <div class="header__mid">
-        <div class="header__mid_dropdown">
-            <select name="dropdown" id="dropdown">
-                <option value="All projects">All projects</option>
-                <option value="Second">Second</option>
-                <option value="Third">Third</option>
-                <option value="Fourth">Fourth</option>
-            </select>
+<div class="container">
+    <!---------------------- Header ----------------------------->
+    <header class="header">
 
+        <div class="header__left">
+            <h1 class="header__title">Projects</h1>
+            <div class="header__button">
+                <button class="header__button__btn"><h6>Roadmap</h6></button>
+                <button class="header__button__btn_active"><h6>Kanban</h6></button>
+                <button class="header__button__btn"><h6>List</h6></button>
+            </div>
         </div>
-        <div class="header__mid_icons">
-            <button class="header__mid_notif">
-                <div class="header__mid__sprite_bell"></div>
-                <div class="header__mid__sprite_bell_notif_default"></div>
+        <div class="header__mid">
+            <div class="header__mid_dropdown">
+                <select name="dropdown" id="dropdown">
+                    <option value="All projects">All projects</option>
+                    <option value="Second">Second</option>
+                    <option value="Third">Third</option>
+                    <option value="Fourth">Fourth</option>
+                </select>
+
+            </div>
+            <div class="header__mid_icons">
+                <button class="header__mid_notif">
+                    <div class="header__mid__sprite_bell"></div>
+                    <div class="header__mid__sprite_bell_notif_default"></div>
+                </button>
+                <button class="header__mid_notif">
+                    <div class="header__mid__sprite_email"></div>
+                    <div class="header__mid__sprite_email_warning"></div>
+                </button>
+
+                <button class="header__mid__sprite_settings"></button>
+            </div>
+        </div>
+        <div class="header__right">
+            <div class="header__right_avatar"></div>
+            <div class="header__right_container">
+                <h5>Madison Eve</h5>
+                <p>Admin</p>
+            </div>
+            <button class="header__right_chevron"></button>
+        </div>
+    </header>
+
+    <!---------------------- Task Board ----------------------------->
+    <div class="task">
+        <div class="task_side"></div>
+        <div class="task__calendar">
+            <div class="task__calendar__date">
+                <h1>May, 2021</h1>
+                <button class="task__calendar__date_arrow_left"></button>
+                <button class="task__calendar__date_arrow_right"></button>
+            </div>
+            <button class="task__calendar_new_proj">
+                <div class="task__calendar_new_proj_plus"></div>
+                <h5 class="task__calendar_new_proj_h5_plus">Add new projects</h5>
             </button>
-            <button class="header__mid_notif">
-                <div class="header__mid__sprite_email"></div>
-                <div class="header__mid__sprite_email_warning"></div>
-            </button>
-
-            <button class="header__mid__sprite_settings"></button>
         </div>
     </div>
-    <div class="header__right">
-        <div class="header__right_avatar"></div>
-        <div class="header__right_container">
-            <h5>Madison Eve</h5>
-            <p>Admin</p>
-        </div>
-        <div class="header__right_chevron"></div>
-    </div>
-</header>
+</div>
 </body>
 </html>

@@ -1,0 +1,58 @@
+.task {
+  padding: 80px 60px;
+  height: 100vh;
+  background-color: $Primary_Highlight;
+  width: calc(100% - #{$sidebar-width});
+
+  &__calendar {
+    display: flex;
+    flex-direction: row;
+    &__date {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &_arrow_left {
+        margin: 0 30px  0 10px;
+        width: $svg_l;
+        height: $svg_l;
+        background-size: $bg_size_m;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url($path-ico + 'arrow_left.svg');
+      }
+
+      &_arrow_right {
+        width: $svg_l;
+        height: $svg_l;
+        background-size: $bg_size_m;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url($path-ico + 'arrow_right.svg');
+      }
+    }
+    &_new_proj{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 230px;
+      height: 48px;
+      background-color: $Blue;
+      color: $White;
+      border-radius: 50px;
+      &_h5_plus{
+        margin: 0px 8px;
+      }
+      &_plus{
+        width: $svg_l;
+        height: $svg_l;
+        margin: 0px 8px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url($path-ico + 'plus.svg');
+      }
+
+    }
+  }
+}

@@ -9,6 +9,7 @@
   };
 
   &__left {
+    padding: 0 0 0 165px;
     @include flex_1;
   }
 
@@ -114,18 +115,6 @@
     }
   }
 }
-
-.header__left {
-  padding: 0 0 0 165px;
-}
-//
-//.header__mid {
-//  padding: 0 120px 0 120px;
-//}
-//
-//.header__right {
-//  padding: 0 0 0 10px;
-//}
 
 #dropdown {
   border-radius: 50px;
