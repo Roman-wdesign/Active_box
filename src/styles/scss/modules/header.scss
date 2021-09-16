@@ -1,7 +1,6 @@
 .header {
   width: 100%;
   padding-left: 160px;
-  position: fixed;
   @include flex_1;
   justify-content: space-between;
   font: {
@@ -9,6 +8,15 @@
   };
 
   &__left {
+    &_burger {
+     @include flex_1;
+      &_ico {
+        margin: 0 10px 0 0 ;
+        @include svg_h;
+        background-image: url($path-ico + 'burger.svg');
+      }
+
+    }
 
     @include flex_1;
   }
@@ -23,6 +31,7 @@
       flex-direction: row;
 
     }
+
     &_notif {
       display: flex;
       flex-direction: row;
@@ -96,7 +105,7 @@
 
   &__button {
     border-radius: 50px;
-    margin: 0 50px;
+    margin: 0 25px;
     padding: 10px;
     background-color: $Primary_Highlight;
 
