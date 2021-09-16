@@ -23,7 +23,17 @@
       background-position: center;
       background-image: url($path-ico + 'logo.svg');
     }
+    &_mess{
+      display: flex;
+      flex-direction: column;
 
+    }
+    &_warning_2{
+
+      margin: -70px 0 0 5px  ;
+      @include svg_h;
+      background-image: url($path-ico + 'warning.svg');
+    }
     &_calendar {
 
       @include svg_s;
@@ -43,6 +53,16 @@
     &_todo {
       @include svg_s;
       background-image: url($path-ico + 'todo.svg');
+    }
+
+    &_prime_settings {
+      @include svg_s;
+      background-image: url($path-ico + 'prime_settings.svg');
+    }
+    &_ic_messages {
+
+      @include svg_s;
+      background-image: url($path-ico + 'ic_messages.svg');
     }
   }
 }

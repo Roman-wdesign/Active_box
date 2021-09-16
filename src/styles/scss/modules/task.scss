@@ -1,18 +1,34 @@
 .task {
-  margin-left: 200px;
-  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 10px 0 0;
+  margin: 0 0 0 200px;
   height: 100vh;
   background-color: $Primary_Highlight;
 
+  &_side {
+    margin: 0 0 0 50px;
+    z-index: 999;
+
+    h5 {
+      margin: 50px 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+  }
 
   &__calendar {
+    margin: 0 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     &__date {
       @include main_row;
+
       &_arrow_left {
-        margin: 0 30px  0 10px;
+        margin: 0 30px 0 10px;
         width: $svg_l;
         height: $svg_l;
         background-size: $bg_size_m;
@@ -30,21 +46,24 @@
         background-image: url($path-ico + 'arrow_right.svg');
       }
     }
-    &_new_proj{
+
+    &_new_proj {
 
       @include main_row;
-      margin: 0 0 0 250px;
+
       justify-content: center;
       width: 230px;
-      height: 48px;
+      height: 40px;
       background-color: $Blue;
       color: $White;
       border-radius: 50px;
-      &_h5_plus{
+
+      &_h5_plus {
 
         margin: 0px 8px;
       }
-      &_plus{
+
+      &_plus {
         width: $svg_l;
         height: $svg_l;
         margin: 0px 8px;
@@ -55,19 +74,25 @@
       }
 
     }
-    &__other{
+
+    &__other {
       @include main_row;
-      &__icons{
+
+      &__icons {
         @include main_row;
-        &_logo{      cursor: pointer;
+
+        &_logo {
+          cursor: pointer;
           border-radius: 50%;
           width: 56px;
           height: 56px;
-          transform: scale(0.73);
+          transform: scale(0.53);
           background-repeat: no-repeat;
           background-position: center;
-          background-image: url($path-ico + 'logo.svg');}
-        &_dots{
+          background-image: url($path-ico + 'logo.svg');
+        }
+
+        &_dots {
           cursor: pointer;
           width: 24px;
           height: 24px;
@@ -77,18 +102,81 @@
         }
       }
     }
-    &__months{
-      &_main{
+
+    &__months {
+      padding: 0 0 0 50px;
+
+      &_main {
         display: flex;
         flex-direction: column;
       }
-      &_scale{
+
+      &_scale {
+        margin: 30px 0 0 0;
+        padding: 0 10px 0 55px;
+        @include flex_1;
+        justify-content: space-between;
+
+        &_may {
+
+          p {
+
+            margin: 0;
+          }
+
+          @include flex_1;
+          justify-content: center;
+          height: 32px;
+          width: 67%;
+          background-color: #e2f4fa;
+        }
+
+        &_june {
+
+          p {
+
+            margin: 0;
+          }
+
+          background-color: #FFFFFF;
+          @include flex_1;
+          justify-content: center;
+          height: 32px;
+          width: 33%;
+        }
+      }
+
+      &_days {
         @include flex_1;
         justify-content: space-between;
       }
-      &_days{
-        @include flex_1;
-        justify-content: space-between;
+    }
+  }
+
+  &__events {
+    padding: 20px 0 0 55px ;
+    &_one {
+      padding: 15px 0  50px 0;
+      @include flex_1;
+      &_indicator_1 {
+        margin: 0 10px 0 0 ;
+        @include indicator;
+        background-color: $primary;
+      }
+      &_indicator_2{
+        margin: 0 10px 0 335px ;
+        @include indicator;
+        background-color: $Blue;
+      }
+      &_indicator_3{
+        margin: 0 10px 0 160px ;
+        @include indicator;
+        background-color: $secondary;
+      }
+      &_indicator_4{
+        margin: 0 10px 0 0 ;
+        @include indicator;
+        background-color: $Tertiary;
       }
     }
   }
