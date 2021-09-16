@@ -1,7 +1,7 @@
 .header {
-  padding: 0 5px;
+  width: 100%;
+  padding-left: 160px;
   position: fixed;
-  width: calc(100% - #{$sidebar-width});
   @include flex_1;
   justify-content: space-between;
   font: {
@@ -9,7 +9,7 @@
   };
 
   &__left {
-    padding: 0 0 0 165px;
+
     @include flex_1;
   }
 
@@ -117,6 +117,7 @@
 }
 
 #dropdown {
+  margin: 0 20px;
   border-radius: 50px;
   outline: none;
   border: 2px solid #E3EBF1;

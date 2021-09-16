@@ -54,6 +54,14 @@ p{
     size: 1.091rem;
   };
 }
+strong{
+  line-height: 1.909rem;
+  font: {
+    family: $font_pop_b;
+    weight: 400;
+    size: 1.273rem;
+  };
+}
 
 body {
   margin: 0;
@@ -68,7 +76,7 @@ body {
 
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -84,4 +92,31 @@ body {
   left: 0;
   z-index: 100;
 
+}
+
+li{
+  margin: 0 5px 0 0;
+  list-style-type: none;
+}
+.li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.active_day{
+  li{
+    color: $Blue;
+  }
+  strong{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    background-color: $Blue;
+    color: $White;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

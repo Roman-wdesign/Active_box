@@ -8,6 +8,18 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
 }
 
+@mixin main_row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin main_column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @mixin svg_s{
   width: $svg_s;
   height: $svg_s;

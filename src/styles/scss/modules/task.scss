@@ -1,16 +1,16 @@
 .task {
-  padding: 80px 60px;
+  margin-left: 200px;
+  margin-right: 40px;
   height: 100vh;
   background-color: $Primary_Highlight;
-  width: calc(100% - #{$sidebar-width});
+
 
   &__calendar {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     &__date {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+      @include main_row;
       &_arrow_left {
         margin: 0 30px  0 10px;
         width: $svg_l;
@@ -31,9 +31,9 @@
       }
     }
     &_new_proj{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+
+      @include main_row;
+      margin: 0 0 0 250px;
       justify-content: center;
       width: 230px;
       height: 48px;
@@ -41,6 +41,7 @@
       color: $White;
       border-radius: 50px;
       &_h5_plus{
+
         margin: 0px 8px;
       }
       &_plus{
@@ -53,6 +54,42 @@
         background-image: url($path-ico + 'plus.svg');
       }
 
+    }
+    &__other{
+      @include main_row;
+      &__icons{
+        @include main_row;
+        &_logo{      cursor: pointer;
+          border-radius: 50%;
+          width: 56px;
+          height: 56px;
+          transform: scale(0.73);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url($path-ico + 'logo.svg');}
+        &_dots{
+          cursor: pointer;
+          width: 24px;
+          height: 24px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url($path-ico + 'dots.svg');
+        }
+      }
+    }
+    &__months{
+      &_main{
+        display: flex;
+        flex-direction: column;
+      }
+      &_scale{
+        @include flex_1;
+        justify-content: space-between;
+      }
+      &_days{
+        @include flex_1;
+        justify-content: space-between;
+      }
     }
   }
 }
