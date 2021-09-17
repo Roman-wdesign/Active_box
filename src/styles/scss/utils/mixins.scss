@@ -46,6 +46,21 @@
   flex-direction: column;
   align-items: center;
 }
+
+@mixin flex_3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex_4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @mixin indicator{
   height: 59px;
   width: 9px;
@@ -58,4 +73,16 @@
   background-image: linear-gradient(90deg, $Primary_Text 75%, transparent 75%, transparent 100%);
   background-size: 20px 1px;
   border: none;
+}
+
+@mixin placeholder{
+  cursor: pointer;
+  margin: $placeholder_mar;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 5rem; height: 5rem;
+}
+@mixin dashed{
+  border: 1px dashed $Tertiary_Text;
+
 }
