@@ -28,12 +28,7 @@
       flex-direction: column;
 
     }
-    &_warning_2{
 
-      margin: -70px 0 0 5px  ;
-      @include svg_h;
-      background-image: url($path-ico + 'warning.svg');
-    }
     &_calendar {
 
       @include svg_s;
@@ -63,6 +58,11 @@
 
       @include svg_s;
       background-image: url($path-ico + 'ic_messages.svg');
+      &_warning_2{
+        margin: -70px 0 0 5px  ;
+        @include svg_h;
+        background-image: url($path-ico + 'warning.svg');
+      }
     }
   }
 }
