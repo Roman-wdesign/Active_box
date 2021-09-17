@@ -1,0 +1,118 @@
+.popup {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 40, 125, 0.42);
+  top: 0;
+  left: 0;
+
+  &__body {
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    width: 70%;
+    height: 90%;
+  }
+
+  &__content {
+    max-width: 1200px;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  &__description {
+
+    &_image {
+      margin: 0;
+      padding: 0;
+      width: 500px;
+      height: 300px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url($path-img  + 'rectangle_4.png');
+    }
+  }
+  &__activity{
+    &__editor{
+      background-color: #EDF1FB;
+      display: flex;
+      flex-direction: row;
+      width: 500px;
+      &_sign_1{
+        @include svg_h;
+        background-image: url($path-editor  + 'sign_1.svg');
+      }
+      &_sign_2{
+        @include svg_h;
+        background-image: url($path-editor  + 'sign_2.svg');
+      }
+      &_sign_3{
+        @include svg_h;
+        background-image: url($path-editor  + 'sign_3.svg');
+      }
+      &_sign_4{
+        @include svg_h;
+        background-image: url($path-editor  + 'sign_4.svg');
+      }
+      &_sign_5{
+        @include svg_h;
+        background-image: url($path-editor  + 'editor_line_black.svg');
+      }
+      &_sign_6{
+        @include svg_h;
+        background-image: url($path-editor  + 'sign_5.svg');
+      }
+      &_sign_7{
+        @include svg_h;
+        background-image: url($path-editor  + 'editor_line.svg');
+      }
+      &_sign_8{
+        @include svg_h;
+        background-image: url($path-editor  + 'ol_sign.svg');
+      }
+      &_sign_9{
+        @include svg_h;
+        background-image: url($path-editor  + 'ul_sign.svg');
+      }
+      &_sign_10{
+        @include svg_h;
+        background-image: url($path-editor  + 'editor_line.svg');
+      }
+      &_sign_11{
+        @include svg_h;
+        background-image: url($path-editor  + 'sign_picture.svg');
+
+      }
+      &_sign_12{
+         @include svg_h;
+        background-image: url($path-editor  + 'editor_line.svg');
+      }
+      &_sign_13{
+         @include svg_h;
+        background-image: url($path-editor  + 'sign_6.svg');
+      }
+      &_sign_14{
+         @include svg_h;
+        background-image: url($path-editor  + 'sign_6_mod.svg');
+      }
+      &_sign_15{
+         @include svg_h;
+        background-image: url($path-editor  + 'editor_line.svg');
+      }
+      &_sign_16{
+         @include svg_h;
+        background-image: url($path-editor  + 'sign_right_arrow.svg');
+      }
+      &_sign_17{
+         @include svg_h;
+        background-image: url($path-editor  + 'sign_left_arrow.svg');
+      }
+    }
+  }
+}
+
