@@ -11,6 +11,8 @@
   left: 0;
 
   &__body {
+    display: flex;
+    flex-direction: row;
     padding: 25px;
     border-radius: 20px;
     background-color: #FFFFFF;
@@ -25,7 +27,7 @@
   }
 
   &__description {
-
+    margin: 10px;
 
     &_image {
       margin: 10px 0 15px 0;
@@ -46,7 +48,7 @@
     }
 
     &__editor {
-      margin:  10px  0;
+      margin: 10px 0;
       background-color: #EDF1FB;
       display: flex;
       flex-direction: row;
@@ -184,6 +186,12 @@
       &_time_ago {
 
       }
+    }
+  }
+
+  &__teams {
+    &__assignee {
+     @include flex_1;
     }
   }
 }
