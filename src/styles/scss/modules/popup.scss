@@ -11,7 +11,7 @@
   left: 0;
 
   &__body {
-    padding: 50px;
+    padding: 25px;
     border-radius: 20px;
     background-color: #FFFFFF;
     width: 70%;
@@ -26,91 +26,163 @@
 
   &__description {
 
+
     &_image {
-      margin: 0;
-      padding: 0;
+      margin: 10px 0 15px 0;
+
       width: 500px;
-      height: 300px;
+      height: 200px;
 
       background-repeat: no-repeat;
       background-position: center;
       background-image: url($path-img  + 'rectangle_4.png');
     }
   }
-  &__activity{
-    &__editor{
+
+  &__activity {
+    &_container {
+      margin: 10px 0;
+      @include flex_1;
+    }
+
+    &__editor {
+      margin:  10px  0;
       background-color: #EDF1FB;
       display: flex;
       flex-direction: row;
       width: 500px;
-      &_sign_1{
+
+      &_sign_1 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_1.svg');
       }
-      &_sign_2{
+
+      &_sign_2 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_2.svg');
       }
-      &_sign_3{
+
+      &_sign_3 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_3.svg');
       }
-      &_sign_4{
+
+      &_sign_4 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_4.svg');
       }
-      &_sign_5{
+
+      &_sign_5 {
         @include svg_h;
         background-image: url($path-editor  + 'editor_line_black.svg');
       }
-      &_sign_6{
+
+      &_sign_6 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_5.svg');
       }
-      &_sign_7{
+
+      &_sign_7 {
         @include svg_h;
         background-image: url($path-editor  + 'editor_line.svg');
       }
-      &_sign_8{
+
+      &_sign_8 {
         @include svg_h;
         background-image: url($path-editor  + 'ol_sign.svg');
       }
-      &_sign_9{
+
+      &_sign_9 {
         @include svg_h;
         background-image: url($path-editor  + 'ul_sign.svg');
       }
-      &_sign_10{
+
+      &_sign_10 {
         @include svg_h;
         background-image: url($path-editor  + 'editor_line.svg');
       }
-      &_sign_11{
+
+      &_sign_11 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_picture.svg');
 
       }
-      &_sign_12{
-         @include svg_h;
+
+      &_sign_12 {
+        @include svg_h;
         background-image: url($path-editor  + 'editor_line.svg');
       }
-      &_sign_13{
-         @include svg_h;
+
+      &_sign_13 {
+        @include svg_h;
         background-image: url($path-editor  + 'sign_6.svg');
       }
-      &_sign_14{
-         @include svg_h;
+
+      &_sign_14 {
+        @include svg_h;
         background-image: url($path-editor  + 'sign_6_mod.svg');
       }
-      &_sign_15{
-         @include svg_h;
+
+      &_sign_15 {
+        @include svg_h;
         background-image: url($path-editor  + 'editor_line.svg');
       }
-      &_sign_16{
-         @include svg_h;
+
+      &_sign_16 {
+        @include svg_h;
         background-image: url($path-editor  + 'sign_right_arrow.svg');
       }
-      &_sign_17{
-         @include svg_h;
+
+      &_sign_17 {
+        @include svg_h;
         background-image: url($path-editor  + 'sign_left_arrow.svg');
+      }
+    }
+
+    &__buttons {
+      margin: 15px 0 10px 0;
+      display: flex;
+      flex-direction: row;
+
+      &_comment {
+        margin: 0 10px 0 0;
+        @include main_row;
+        color: $White;
+        justify-content: center;
+        background-color: $Blue;
+        height: 40px;
+        width: 120px;
+        border-radius: 50px;
+      }
+
+      &_cancel {
+        @include main_row;
+        color: $Secondary_Text;
+        justify-content: center;
+        background-color: $White;
+        height: 40px;
+        width: 120px;
+        border-radius: 50px;
+      }
+    }
+
+    &__user {
+
+      &_img {
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        background-image: url($path-img  + 'placeholder.png');
+      }
+
+      &_name {
+        padding: 0 20px;
+      }
+
+      &_time_ago {
+
       }
     }
   }
