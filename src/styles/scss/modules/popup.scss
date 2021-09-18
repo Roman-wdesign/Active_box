@@ -10,20 +10,24 @@
   top: 0;
   left: 0;
 
+
   &__body {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 25px;
     border-radius: 20px;
     background-color: #FFFFFF;
     width: 70%;
     height: 90%;
+    position: relative;
   }
 
   &__content {
     max-width: 1200px;
     background-color: #FFFFFF;
     color: #000000;
+
   }
 
   &__description {
@@ -190,8 +194,54 @@
   }
 
   &__teams {
+    padding: 10px 0 0 30px;
+
     &__assignee {
-     @include flex_1;
+      color: $Secondary_Text;
+      @include popup_1;
+      @include flex_1;
+    }
+
+    &__reporter {
+      color: $Secondary_Text;
+      @include popup_1;
+      @include flex_1;
+    }
+
+    &__sprint {
+      color: $Secondary_Text;
+      @include popup_1;
+      @include flex_1;
+    }
+
+    &__tempo {
+      color: $Secondary_Text;
+      @include popup_1;
+      @include flex_1;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    &_cross {
+      margin: -10px;
+      top: 0;
+      right: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $Blue;
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      background-image: url($path-ico + 'close_window.svg');
+    }
+    &_circle{
+
+    }
+    &_href {
+      cursor: pointer;
     }
   }
 }

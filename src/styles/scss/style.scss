@@ -191,7 +191,7 @@ li {
   margin: $placeholder_mar;
   width: 5rem;
   height: 5rem;
-  background-color: $Tertiary;
+  background-color: $Blue;
   border-radius: 100%;
   border: 2px solid #FFFFFF;
   color: $White;
@@ -211,4 +211,15 @@ li {
   border: 1px solid #2251F8;
   border-style: dashed;
 
+}
+
+.yellow_circle{
+  margin: 0 10px 0 20px;
+  width: 19px;
+  height: 19px;
+  background-color: $yellow;
+  border-radius: 100%;
+}
+.strong_1{
+  color: $Primary_Text;
 }
