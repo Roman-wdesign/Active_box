@@ -1,5 +1,6 @@
 # JetPack
 
+Open package.json
 
 #  Install dependencies:
 npm install
@@ -13,8 +14,3 @@ npm run build
 
 Create dist folder(compressed code)
 
-
-# Development:
-npm run dev
-
-Create dist folder(no-compressed code)
