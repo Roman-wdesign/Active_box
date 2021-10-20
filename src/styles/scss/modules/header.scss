@@ -1,73 +1,44 @@
 .header {
   width: 100%;
   padding-left: 160px;
-  @include flex_1;
-  justify-content: space-between;
   font: {
     color: #717579;
   };
 
   &__left {
     &_burger {
-     @include flex_1;
       &_ico {
-        margin: 0 10px 0 0 ;
+        margin: 0 10px 0 0;
         @include svg_h;
         background-image: url($path-ico + 'burger.svg');
       }
-
     }
-
-    @include flex_1;
   }
 
   &__mid {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    &_icons {
-      display: flex;
-      flex-direction: row;
-
-    }
-
-    &_notif {
-      display: flex;
-      flex-direction: row;
-      margin-top: -7px;
-    }
-
-    &__sprite {
-      display: flex;
-      flex-direction: row;
-
-      &_bell {
-        margin-right: -25px;
-        margin-top: 7px;
-        @include svg_h;
+    &_sprite {
+      &-bell {
+       @include svg_notifications_m;
         background-image: url($path-ico + 'bell.svg');
+        color: $Light;
 
-        &_notif_default {
-
-          @include svg_h;
+        &-notif-default {
+         @include svg_notifications;
           background-image: url($path-ico + 'notif_default.svg');
         }
       }
 
-      &_email {
-        margin-right: -25px;
-        margin-top: 7px;
+      &-email {
         @include svg_h;
         background-image: url($path-ico + 'email.svg');
 
-        &_warning {
+        &-warning {
           @include svg_h;
           background-image: url($path-ico + 'warning.svg');
         }
       }
 
-      &_settings {
+      &-settings {
         @include svg_h;
         background-image: url($path-ico + 'settings.svg');
 
@@ -81,19 +52,12 @@
     align-items: center;
 
     &_container {
-
       display: flex;
       flex-direction: column;
     }
 
     &_avatar {
-      margin-right: 18px;
-      width: 60px;
-      height: 60px;
-      border-radius: 100%;
-      border: none;
-      background-color: $Old_Blue_2;
-
+      @include user-avatar;
     }
 
     &_chevron {
@@ -106,27 +70,21 @@
   &__button {
     border-radius: 50px;
     margin: 0 25px;
-    padding: 10px;
     background-color: $Primary_Highlight;
 
-    &__btn {
+    &-btn {
       h6 {
         color: $Secondary_Text;
       }
 
       &_active {
-        color: $White;
-        margin: 0 30px;
-        border-radius: 16px;
-        padding: 10px 20px;
-        background-color: $secondary_active;
+        @include active-button;
       }
     }
   }
 }
 
 #dropdown {
-  margin: 0 20px;
   border-radius: 50px;
   outline: none;
   border: 2px solid #E3EBF1;

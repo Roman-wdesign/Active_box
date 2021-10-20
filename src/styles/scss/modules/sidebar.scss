@@ -1,23 +1,21 @@
 .sidebar {
+  z-index: 9999;
   width: $sidebar-width;
-  height: 100vh;
+
   background-color: $Background;
   box-shadow: 5px 0 15px rgba(#050505, 0.1);
   position: fixed;
-  top: 0;
-  left: 0;
-
 
   &__sprite {
+    height: 100vh;
     @include flex_2;
-    justify-content: flex-start;
+    margin: 30px 0 0 0;
 
     &_logo {
       cursor: pointer;
       border-radius: 50%;
       width: 56px;
       height: 56px;
-      margin: 3.4rem 0 8.6rem;
       background-repeat: no-repeat;
       background-position: center;
       background-image: url($path-ico + 'logo.svg');
@@ -64,4 +62,7 @@
       }
     }
   }
+}
+.logo{
+  padding: 0 0 100px 0;
 }

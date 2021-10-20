@@ -23,75 +23,94 @@
 </head>
 <body>
 
-<aside class="sidebar">
+<div class="sidebar">
     <!--Sidebar-->
+    <div class="row">
+        <div class="col">
 
-    <div class="sidebar__sprite">
-
-        <button class="sidebar__sprite_logo"></button>
-
-        <button class="sidebar__sprite_home"></button>
-        <button class="sidebar__sprite_list"></button>
-        <button class="sidebar__sprite_calendar"></button>
-        <button class="sidebar__sprite_todo"></button>
-        <button class="sidebar__sprite_prime_settings"></button>
-        <button class="sidebar__sprite_mess">
-            <div class="sidebar__sprite_ic_messages"></div>
-            <div class="sidebar__sprite_ic_messages_warning_2"></div>
-        </button>
-        <div class="sidebar__content">
+            <div class="sidebar__sprite">
+                <div class="logo">
+                    <div class="sidebar__sprite_logo"></div>
+                </div>
+                <a href="#" class="sidebar__sprite_home"></a>
+                <a href="#" class="sidebar__sprite_list"></a>
+                <a href="#" class="sidebar__sprite_calendar"></a>
+                <a href="#" class="sidebar__sprite_todo"></a>
+                <a href="#" class="sidebar__sprite_prime_settings"></a>
+                <a href="#" class="sidebar__sprite_mess">
+                    <a href="#" class="sidebar__sprite_ic_messages"></a>
+                    <a href="#" class="sidebar__sprite_ic_messages_warning_2"></a>
+                </a>
+            </div>
         </div>
     </div>
-</aside>
+</div>
 
-<div class="container">
+<div class="container-fluid">
     <!---------------------- Header ----------------------------->
-    <header class="header">
+    <div class="row">
+        <header class="header d-flex flex-row justify-content-between align-items-center">
 
-        <div class="header__left">
-            <div class="header__left_burger">
-                <button class="header__left_burger_ico"></button>
-                <h1 class="header__title">Projects</h1>
+            <div class="header__left d-flex flex-row justify-content-between align-items-center">
+                <div class="header__left_burger d-flex flex-row justify-content-between align-items-center">
+                    <button class="header__left_burger_ico"></button>
+                    <h1 class="header__title">Projects</h1>
+                </div>
+                <div class="header__button">
+                    <div class="container px-4">
+                        <div class="row gx-5">
+                            <div class="col">
+                                <div class="header__button-btn  p-3">Roadmap</div>
+                            </div>
+                            <div class="col">
+                                <div class="header__button-btn_active">Kanban</div>
+                            </div>
+                            <div class="col">
+                                <div class="header__button-btn  p-3">List</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="header__button">
-                <button class="header__button__btn"><h6>Roadmap</h6></button>
-                <button class="header__button__btn_active"><h6>Kanban</h6></button>
-                <button class="header__button__btn"><h6>List</h6></button>
-            </div>
-        </div>
-        <div class="header__mid">
-            <div class="header__mid_dropdown">
-                <select name="dropdown" id="dropdown">
-                    <option value="All projects">All projects</option>
-                    <option value="Second">Second</option>
-                    <option value="Third">Third</option>
-                    <option value="Fourth">Fourth</option>
-                </select>
 
-            </div>
-            <div class="header__mid_icons">
-                <button class="header__mid_notif">
-                    <div class="header__mid__sprite_bell"></div>
-                    <div class="header__mid__sprite_bell_notif_default"></div>
-                </button>
-                <button class="header__mid_notif">
-                    <div class="header__mid__sprite_email"></div>
-                    <div class="header__mid__sprite_email_warning"></div>
-                </button>
+            <div class="header__mid d-flex flex-row justify-content-center">
+                <div class="header__mid_dropdown">
+                    <select name="dropdown" id="dropdown">
+                        <option value="All projects">All projects</option>
+                        <option value="Second">Second</option>
+                        <option value="Third">Third</option>
+                        <option value="Fourth">Fourth</option>
+                    </select>
 
-                <button class="header__mid__sprite_settings"></button>
+                </div>
+                <div class="header__mid_icons d-flex flex-row">
+
+                    <button type="button" class="btn  header__mid_sprite-bell position-relative">
+                        <span class="header__mid_sprite-bell-notif-default position-absolute start-100 top-0   translate-middle d-flex flex-row justify-content-center align-items-center">
+                            12 <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+
+                    <button class="header__mid_notif d-flex flex-row">
+                        <div class="header__mid_sprite-email"></div>
+                        <div class="header__mid_sprite-email-warning"></div>
+                    </button>
+
+                    <button class="header__mid_sprite-settings"></button>
+                </div>
             </div>
-        </div>
-        <div class="header__right">
-            <div class="header__right_avatar"></div>
-            <div class="header__right_container">
-                <h5>Madison Eve</h5>
-                <p>Admin</p>
+            <div class="header__right">
+                <div class="header__right_avatar"></div>
+                <div class="header__right_container">
+                    <h5>Madison Eve</h5>
+                    <p>Admin</p>
+                </div>
+                <button class="header__right_chevron"></button>
             </div>
-            <button class="header__right_chevron"></button>
-        </div>
-    </header>
+        </header>
+    </div>
+
 
     <!---------------------- Task Board ----------------------------->
     <div class="task">

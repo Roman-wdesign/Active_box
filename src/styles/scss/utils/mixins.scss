@@ -7,7 +7,21 @@
   background: #C4C4C4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
 }
-
+@mixin active-button{
+  color: $White;
+  border-radius: 16px;
+  background-color: $secondary_active;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+@mixin user-avatar{
+  margin-right: 18px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  background-color: $Old_Blue_2;
+}
 @mixin main_row{
   display: flex;
   flex-direction: row;
@@ -31,6 +45,20 @@
   width: $svg_s;
   height: $svg_s;
   background-size: $bg_size;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@mixin svg_notifications{
+  width: $svg_h;
+  height: $svg_h;
+  background-size: $bg_size_notif;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@mixin svg_notifications_m{
+  width: $svg_s_notif;
+  height: $svg_s_notif;
+  background-size: $bg_size_notif;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -93,3 +121,13 @@
   padding: 10px 0;
   border-bottom: 1px solid $Tertiary_Text;
 }
+
+
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
