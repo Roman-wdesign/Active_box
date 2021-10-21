@@ -25,31 +25,28 @@
 
 <div class="sidebar">
     <!--Sidebar-->
-    <div class="row">
-        <div class="col">
 
-            <div class="sidebar__sprite">
+
+            <div class="sidebar__sprite d-flex  flex-column align-items-center">
                 <div class="logo">
-                    <div class="sidebar__sprite_logo"></div>
+                    <div class="sidebar__sprite_logo "></div>
                 </div>
                 <a href="#" class="sidebar__sprite_home"></a>
                 <a href="#" class="sidebar__sprite_list"></a>
                 <a href="#" class="sidebar__sprite_calendar"></a>
                 <a href="#" class="sidebar__sprite_todo"></a>
                 <a href="#" class="sidebar__sprite_prime_settings"></a>
-                <a href="#" class="sidebar__sprite_mess">
+                <a href="#" class="sidebar__sprite_mess d-flex flex-column">
                     <a href="#" class="sidebar__sprite_ic_messages"></a>
                     <a href="#" class="sidebar__sprite_ic_messages_warning_2"></a>
                 </a>
             </div>
-        </div>
-    </div>
 </div>
 
 <div class="container-fluid">
     <!---------------------- Header ----------------------------->
     <div class="row">
-        <header class="header d-flex flex-row justify-content-between align-items-center">
+        <header class="header d-flex flex-row justify-content-between align-items-center position-relative">
 
             <div class="header__left d-flex flex-row justify-content-between align-items-center">
                 <div class="header__left_burger d-flex flex-row justify-content-between align-items-center">
@@ -74,7 +71,7 @@
             </div>
 
 
-            <div class="header__mid d-flex flex-row justify-content-center">
+            <div class="header__mid d-flex flex-row justify-content-between">
                 <div class="header__mid_dropdown">
                     <select name="dropdown" id="dropdown">
                         <option value="All projects">All projects</option>
@@ -84,29 +81,52 @@
                     </select>
 
                 </div>
-                <div class="header__mid_icons d-flex flex-row">
-
-                    <button type="button" class="btn  header__mid_sprite-bell position-relative">
+                <div class="header__mid_icons d-flex justify-content-between flex-row align-items-center">
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn  header__mid_sprite-bell position-relative">
                         <span class="header__mid_sprite-bell-notif-default position-absolute start-100 top-0   translate-middle d-flex flex-row justify-content-center align-items-center">
-                            12 <span class="visually-hidden">unread messages</span>
+                            <span class="fw-bold">12</span> <span class="visually-hidden">unread messages</span>
                         </span>
-                    </button>
+                            </button>
+                        </div>
+                    </div>
 
-                    <button class="header__mid_notif d-flex flex-row">
-                        <div class="header__mid_sprite-email"></div>
-                        <div class="header__mid_sprite-email-warning"></div>
-                    </button>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn header__mid_sprite-email position-relative">
 
-                    <button class="header__mid_sprite-settings"></button>
+                                <span class="header__mid_sprite-email-warning position-absolute start-100 top-0 translate-middle"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <button class="header__mid_sprite-settings"></button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="header__right">
-                <div class="header__right_avatar"></div>
-                <div class="header__right_container">
-                    <h5>Madison Eve</h5>
-                    <p>Admin</p>
+            <div class="header__right d-flex flex-row align-items-center">
+
+
+                <div class="row gx-9">
+                    <div class="col">
+                        <div class="header__right_avatar"></div>
+                    </div>
+                    <div class="col">
+                        <div class="header__right_container d-flex flex-column">
+                            <h5>Madison Eve</h5>
+                            <p>Admin</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="header__right_chevron" ></button>
+                    </div>
                 </div>
-                <button class="header__right_chevron"></button>
+
             </div>
         </header>
     </div>
@@ -154,7 +174,7 @@
             <div class="task__calendar__months_main">
 
                 <ol class="task__calendar__months_days">
-                    <div class="li">
+                    <div class="task__calendar__months_days_li d-flex flex-column align-items-center">
                         <li>Mo</li>
                         <li><strong>1</strong></li>
                     </div>
@@ -195,10 +215,10 @@
                         <li>We</li>
                         <li><strong>10</strong></li>
                     </div>
-                    <div class="active_day">
+                    <div class="task__calendar_active-day">
                         <li>Th</li>
 
-                        <li><strong class="blue_line">11</strong></li>
+                        <li><strong class="task__calendar_blue-line">11</strong></li>
 
                         <div class="border_2"></div>
                     </div>
@@ -348,7 +368,7 @@
             </div>
 
         </div>
-        <div class="side_content">
+        <div class="task__side-content d-flex flex-row">
             <div class="task_content__lines">
                 <hr class="task_content__lines_border_2">
             </div>
@@ -364,11 +384,11 @@
                         <div class="task__events_one_indicator_1"></div>
                         <h4>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</h4>
                         <div class="task__events_one_image">
-                            <div class="placeholder"></div>
-                            <div class="placeholder-1"></div>
-                            <div class="placeholder-2"></div>
-                            <div class="placeholder-3"></div>
-                            <div class="placeholder-more"><h4>5+</h4></div>
+                            <div class="task__placeholder"></div>
+                            <div class="task__placeholder-1"></div>
+                            <div class="task__placeholder-2"></div>
+                            <div class="task__placeholder-3"></div>
+                            <div class="task__placeholder-more"><h4>5+</h4></div>
                         </div>
                     </div>
 
@@ -384,8 +404,8 @@
                         <div class="task__events_one_indicator_2"></div>
                         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         <div class="task__events_one_image">
-                            <div class="placeholder"></div>
-                            <div class="placeholder-1"></div>
+                            <div class="task__placeholder"></div>
+                            <div class="task__placeholder-1"></div>
                         </div>
                     </div>
                     <div class="task__events__void"></div>
@@ -401,8 +421,8 @@
                         <div class="task__events_one_indicator_3"></div>
                         <h4>Lorem ipsum dolor ...</h4>
                         <div class="task__events_one_image">
-                            <div class="placeholder"></div>
-                            <div class="placeholder-1"></div>
+                            <div class="task__placeholder"></div>
+                            <div class="task__placeholder-1"></div>
                         </div>
                     </div>
                     <div class="task__events__void"></div>
@@ -414,8 +434,8 @@
                         <div class="task__events_one_indicator_4"></div>
                         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         <div class="task__events_one_image">
-                            <div class="placeholder"></div>
-                            <div class="placeholder-1"></div>
+                            <div class="task__placeholder"></div>
+                            <div class="task__placeholder-1"></div>
                         </div>
                     </div>
                     <div class="task__events__void"></div>
@@ -428,111 +448,111 @@
         </div>
     </div>
 </div>
-<!--<div class="popup" id="popup">-->
-<!--    <div class="popup__body">-->
-<!--        <div class="popup__content">-->
-<!--            <div class="popup__close">-->
-<!--                <a href="##" class="popup__close_href"><div class="popup__close_cross"></div></a>-->
-<!--            </div>-->
+<div class="popup d-none justify-content-center align-items-center position-fixed" id="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__close">
+                <a href="##" class="popup__close_href"><div class="popup__close_cross"></div></a>
+            </div>
 
-<!--            <div class="popup__header"><h1>Feature 3</h1></div>-->
-<!--            <div class="popup__description"><strong>Description</strong>-->
-<!--                <p>-->
-<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut-->
-<!--                    labore-->
-<!--                    et dolore magna aliqua. Ut <br>enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris-->
-<!--                    nisi ut-->
-<!--                    aliquip ex ea commodo consequat. Duis aute irure <br>dolor-->
-<!--                </p>-->
-<!--                <div class="popup__description_image"></div>-->
-<!--            </div>-->
-<!--            <div class="popup__activity">-->
-<!--                <div class="popup__activity_header"><strong>Activity</strong></div>-->
-<!--                <div class="popup__activity__editor">-->
-<!--                    <div class="popup__activity__editor_sign_1"></div>-->
-<!--                    <div class="popup__activity__editor_sign_2"></div>-->
-<!--                    <div class="popup__activity__editor_sign_3"></div>-->
-<!--                    <div class="popup__activity__editor_sign_4"></div>-->
-<!--                    <div class="popup__activity__editor_sign_5"></div>-->
-<!--                    <div class="popup__activity__editor_sign_6"></div>-->
-<!--                    <div class="popup__activity__editor_sign_7"></div>-->
-<!--                    <div class="popup__activity__editor_sign_8"></div>-->
-<!--                    <div class="popup__activity__editor_sign_9"></div>-->
-<!--                    <div class="popup__activity__editor_sign_10"></div>-->
-<!--                    <div class="popup__activity__editor_sign_11"></div>-->
-<!--                    <div class="popup__activity__editor_sign_12"></div>-->
-<!--                    <div class="popup__activity__editor_sign_13"></div>-->
-<!--                    <div class="popup__activity__editor_sign_14"></div>-->
-<!--                    <div class="popup__activity__editor_sign_15"></div>-->
-<!--                    <div class="popup__activity__editor_sign_16"></div>-->
-<!--                    <div class="popup__activity__editor_sign_17"></div>-->
-<!--                </div>-->
-<!--                <p>-->
-<!--                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been-->
-<!--                    the-->
-<!--                    industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of-->
-<!--                    type<br>-->
-<!--                    and scrambled it to make a type <b>specimen book</b>-->
-<!--                </p>-->
-<!--                <div class="popup__activity__buttons">-->
-<!--                    <button class="popup__activity__buttons_comment">Comment</button>-->
-<!--                    <button class="popup__activity__buttons_cancel">Cancel</button>-->
-<!--                </div>-->
-<!--                <div class="popup__activity__user">-->
-<!--                    <div class="popup__activity_container">-->
-<!--                        <div class="popup__activity__user_img"></div>-->
-<!--                        <div class="popup__activity__user_name"><strong>Robert Adamski</strong></div>-->
-<!--                        <div class="popup__activity__user_time_ago"><p>20 minutes ago</p></div>-->
-<!--                    </div>-->
+            <div class="popup__header"><h1>Feature 3</h1></div>
+            <div class="popup__description"><strong>Description</strong>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut <br>enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris
+                    nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure <br>dolor
+                </p>
+                <div class="popup__description_image"></div>
+            </div>
+            <div class="popup__activity">
+                <div class="popup__activity_header"><strong>Activity</strong></div>
+                <div class="popup__activity__editor">
+                    <div class="popup__activity__editor_sign_1"></div>
+                    <div class="popup__activity__editor_sign_2"></div>
+                    <div class="popup__activity__editor_sign_3"></div>
+                    <div class="popup__activity__editor_sign_4"></div>
+                    <div class="popup__activity__editor_sign_5"></div>
+                    <div class="popup__activity__editor_sign_6"></div>
+                    <div class="popup__activity__editor_sign_7"></div>
+                    <div class="popup__activity__editor_sign_8"></div>
+                    <div class="popup__activity__editor_sign_9"></div>
+                    <div class="popup__activity__editor_sign_10"></div>
+                    <div class="popup__activity__editor_sign_11"></div>
+                    <div class="popup__activity__editor_sign_12"></div>
+                    <div class="popup__activity__editor_sign_13"></div>
+                    <div class="popup__activity__editor_sign_14"></div>
+                    <div class="popup__activity__editor_sign_15"></div>
+                    <div class="popup__activity__editor_sign_16"></div>
+                    <div class="popup__activity__editor_sign_17"></div>
+                </div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been
+                    the
+                    industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of
+                    type<br>
+                    and scrambled it to make a type <b>specimen book</b>
+                </p>
+                <div class="popup__activity__buttons">
+                    <button class="popup__activity__buttons_comment">Comment</button>
+                    <button class="popup__activity__buttons_cancel">Cancel</button>
+                </div>
+                <div class="popup__activity__user">
+                    <div class="popup__activity_container">
+                        <div class="popup__activity__user_img"></div>
+                        <div class="popup__activity__user_name"><strong>Robert Adamski</strong></div>
+                        <div class="popup__activity__user_time_ago"><p>20 minutes ago</p></div>
+                    </div>
 
-<!--                    <p>-->
-<!--                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has-->
-<!--                        been-->
-<!--                        the-->
-<!--                        industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley-->
-<!--                        of-->
-<!--                        type<br>-->
-<!--                        and scrambled it to make a type <b>specimen book</b>-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="popup__teams">-->
-<!--            <div class="popup__teams__assignee">-->
-<!--                <p>Assignee</p>-->
-<!--                <div class="task__events_one_image">-->
-<!--                    <div class="placeholder"></div>-->
-<!--                    <div class="placeholder-1"></div>-->
-<!--                    <div class="placeholder-2"></div>-->
-<!--                    <div class="placeholder-3"></div>-->
-<!--                    <div class="placeholder-more"><h4>5+</h4></div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="popup__teams__reporter">-->
-<!--                <p>Reporter</p>-->
-<!--                <div class="task__events_one_image">-->
-<!--                    <div class="placeholder"></div>-->
-<!--                    <div class="placeholder-1"></div>-->
-<!--                    <div class="placeholder-2"></div>-->
-<!--                    <div class="placeholder-3"></div>-->
-<!--                    <div class="placeholder-more"><h4>5+</h4></div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="popup__teams__sprint">-->
-<!--                <p>Sprint</p>-->
-<!--                <div class="task__events_one_image">-->
-<!--                    <p>Срочные работы</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="popup__teams__tempo">-->
-<!--                <p>Tempo</p>-->
-<!--                <div class="task__events_one_image">-->
-<!--                    <div class="yellow_circle"></div>-->
-<!--                    <strong class="strong_1">Medium</strong>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has
+                        been
+                        the
+                        industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley
+                        of
+                        type<br>
+                        and scrambled it to make a type <b>specimen book</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="popup__teams">
+            <div class="popup__teams__assignee">
+                <p>Assignee</p>
+                <div class="task__events_one_image">
+                    <div class="task__placeholder"></div>
+                    <div class="task__placeholder-1"></div>
+                    <div class="task__placeholder-2"></div>
+                    <div class="task__placeholder-3"></div>
+                    <div class="task__placeholder-more"><h4>5+</h4></div>
+                </div>
+            </div>
+            <div class="popup__teams__reporter">
+                <p>Reporter</p>
+                <div class="task__events_one_image">
+                    <div class="task__placeholder"></div>
+                    <div class="task__placeholder-1"></div>
+                    <div class="task__placeholder-2"></div>
+                    <div class="task__placeholder-3"></div>
+                    <div class="task__placeholder-more"><h4>5+</h4></div>
+                </div>
+            </div>
+            <div class="popup__teams__sprint">
+                <p>Sprint</p>
+                <div class="task__events_one_image">
+                    <p>Срочные работы</p>
+                </div>
+            </div>
+            <div class="popup__teams__tempo">
+                <p>Tempo</p>
+                <div class="task__events_one_image">
+                    <div class="popup__teams_yellow-circle"></div>
+                    <strong class="popup__teams_strong-1">Medium</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

@@ -1,6 +1,10 @@
 .header {
   width: 100%;
   padding-left: 160px;
+  height: 120px;
+  top: 0;
+  left: 0;
+  z-index: 100;
   font: {
     color: #717579;
   };
@@ -16,6 +20,10 @@
   }
 
   &__mid {
+    width: 30rem;
+    &_icons{
+      width: 15rem;
+    }
     &_sprite {
       &-bell {
        @include svg_notifications_m;
@@ -29,11 +37,11 @@
       }
 
       &-email {
-        @include svg_h;
+        @include svg_notifications_m;
         background-image: url($path-ico + 'email.svg');
 
         &-warning {
-          @include svg_h;
+          @include svg_notifications;
           background-image: url($path-ico + 'warning.svg');
         }
       }
@@ -47,21 +55,11 @@
   }
 
   &__right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    &_container {
-      display: flex;
-      flex-direction: column;
-    }
-
     &_avatar {
       @include user-avatar;
     }
 
     &_chevron {
-      margin-left: 5px;
       @include svg_h;
       background-image: url($path-ico + 'ic_chevron.svg');
     }

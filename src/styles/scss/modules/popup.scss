@@ -1,9 +1,5 @@
 .popup {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   z-index: 10000;
-  position: fixed;
   width: 100%;
   height: 100%;
   background-color: rgba(16, 40, 125, 0.42);
@@ -196,6 +192,17 @@
   &__teams {
     padding: 10px 0 0 30px;
 
+    &_yellow-circle {
+      margin: 0 10px 0 20px;
+      width: 19px;
+      height: 19px;
+      background-color: $yellow;
+      border-radius: 100%;
+    }
+    &_strong-1{
+      color: $Primary_Text;
+    }
+
     &__assignee {
       color: $Secondary_Text;
       @include popup_1;
@@ -225,6 +232,7 @@
     position: absolute;
     right: 0;
     top: 0;
+
     &_cross {
       margin: -10px;
       top: 0;
@@ -237,9 +245,11 @@
       height: 40px;
       background-image: url($path-ico + 'close_window.svg');
     }
-    &_circle{
+
+    &_circle {
 
     }
+
     &_href {
       cursor: pointer;
     }

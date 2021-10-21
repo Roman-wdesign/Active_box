@@ -6,7 +6,7 @@
   height: 100vh;
   background-color: $Primary_Highlight;
 
-  &_content {
+  &__side-content {
 
     &__lines {
 
@@ -34,6 +34,32 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    &_blue-line::before {
+      content: '';
+      opacity: 0.5;
+      height: 60%;
+      top: 320px;
+      left: 572px;
+      position: absolute;
+      border: 1px solid #2251F8;
+      border-style: dashed;
+    }
+
+    &_active-day {
+      li {
+        color: $Blue;
+      }
+
+      strong {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        border: none;
+        background-color: $Blue;
+        color: $White;
+      }
+    }
 
     &__date {
       @include main_row;
@@ -184,6 +210,7 @@
 
   &__events {
 
+
     overflow: hidden;
     //background-image:
     //
@@ -203,6 +230,7 @@
       &_image {
         margin: 0 0 0 25px;
         @include flex_1;
+
         p {
           padding: 0 0 0 30px;
           font-size: 16px;
@@ -249,5 +277,48 @@
       width: 150px;
       height: 120px;
     }
+  }
+
+  &__placeholder {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 5rem;
+    height: 5rem;
+    background-image: url($path-img  + 'placeholder.png');
+  }
+
+  &__placeholder-1 {
+    @include placeholder;
+    background-image: url($path-img  + 'placeholder-1.png');
+  }
+
+  &__placeholder-2 {
+    @include placeholder;
+    background-image: url($path-img  + 'placeholder-2.png');
+  }
+
+  &__placeholder-3 {
+    @include placeholder;
+    background-image: url($path-img  + 'placeholder-3.png');
+  }
+
+  &__placeholder-more {
+    cursor: pointer;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    @include flex_2;
+    justify-content: center;
+    margin: $placeholder_mar;
+    width: 5rem;
+    height: 5rem;
+    background-color: $Blue;
+    border-radius: 100%;
+    border: 2px solid #FFFFFF;
+    color: $White;
   }
 }
