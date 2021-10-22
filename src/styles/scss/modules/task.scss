@@ -1,9 +1,6 @@
 .task {
-  display: flex;
-  flex-direction: column;
   padding: 20px 10px 0 0;
   margin: 0 0 0 200px;
-  height: 100vh;
   background-color: $Primary_Highlight;
 
   &__side-content {
@@ -31,9 +28,6 @@
 
   &__calendar {
     margin: 0 25px 0 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
     &_blue-line::before {
       content: '';

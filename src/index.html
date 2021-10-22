@@ -25,117 +25,118 @@
 
 <div class="sidebar">
     <!--Sidebar-->
-
-
-            <div class="sidebar__sprite d-flex  flex-column align-items-center">
-                <div class="logo">
-                    <div class="sidebar__sprite_logo "></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="sidebar__sprite d-flex  flex-column align-items-center">
+                    <div class="logo">
+                        <div class="sidebar__sprite_logo "></div>
+                    </div>
+                    <a href="#" class="sidebar__sprite_home"></a>
+                    <a href="#" class="sidebar__sprite_list"></a>
+                    <a href="#" class="sidebar__sprite_calendar"></a>
+                    <a href="#" class="sidebar__sprite_todo"></a>
+                    <a href="#" class="sidebar__sprite_prime_settings"></a>
+                    <a href="#" class="sidebar__sprite_mess d-flex flex-column">
+                        <a href="#" class="sidebar__sprite_ic_messages"></a>
+                        <a href="#" class="sidebar__sprite_ic_messages_warning_2"></a>
+                    </a>
                 </div>
-                <a href="#" class="sidebar__sprite_home"></a>
-                <a href="#" class="sidebar__sprite_list"></a>
-                <a href="#" class="sidebar__sprite_calendar"></a>
-                <a href="#" class="sidebar__sprite_todo"></a>
-                <a href="#" class="sidebar__sprite_prime_settings"></a>
-                <a href="#" class="sidebar__sprite_mess d-flex flex-column">
-                    <a href="#" class="sidebar__sprite_ic_messages"></a>
-                    <a href="#" class="sidebar__sprite_ic_messages_warning_2"></a>
-                </a>
             </div>
+        </div>
+    </div>
+
+
 </div>
 
 <div class="container-fluid">
     <!---------------------- Header ----------------------------->
-    <div class="row">
-        <header class="header d-flex flex-row justify-content-between align-items-center position-relative">
 
+    <header class="header d-flex flex-row justify-content-between align-items-center position-relative">
+
+
+        <div class="row ">
             <div class="header__left d-flex flex-row justify-content-between align-items-center">
-                <div class="header__left_burger d-flex flex-row justify-content-between align-items-center">
-                    <button class="header__left_burger_ico"></button>
-                    <h1 class="header__title">Projects</h1>
+
+                <div class="col">
+                    <div class="header__left_burger d-flex flex-row justify-content-between align-items-center">
+                        <button class="header__left_burger_ico"></button>
+                        <h1 class="header__title">Projects</h1>
+                    </div>
                 </div>
-                <div class="header__button">
-                    <div class="container px-4">
-                        <div class="row gx-5">
-                            <div class="col">
-                                <div class="header__button-btn  p-3">Roadmap</div>
-                            </div>
-                            <div class="col">
-                                <div class="header__button-btn_active">Kanban</div>
-                            </div>
-                            <div class="col">
-                                <div class="header__button-btn  p-3">List</div>
-                            </div>
-                        </div>
+                <div class="col">
+                    <div class="header__button d-flex flex-row px-4">
+                        <div class="header__button-btn d-flex flex-row  align-items-center">Roadmap</div>
+                        <div class="header__button-btn_active">Kanban</div>
+                        <div class="header__button-btn d-flex flex-row  align-items-center">List</div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="header__mid d-flex flex-row justify-content-between">
+            <div class="header__mid_dropdown">
+                <select name="dropdown" id="dropdown">
+                    <option value="All projects">All projects</option>
+                    <option value="Second">Second</option>
+                    <option value="Third">Third</option>
+                    <option value="Fourth">Fourth</option>
+                </select>
 
-
-            <div class="header__mid d-flex flex-row justify-content-between">
-                <div class="header__mid_dropdown">
-                    <select name="dropdown" id="dropdown">
-                        <option value="All projects">All projects</option>
-                        <option value="Second">Second</option>
-                        <option value="Third">Third</option>
-                        <option value="Fourth">Fourth</option>
-                    </select>
-
-                </div>
-                <div class="header__mid_icons d-flex justify-content-between flex-row align-items-center">
-                    <div class="row">
-                        <div class="col">
-                            <button type="button" class="btn  header__mid_sprite-bell position-relative">
+            </div>
+            <div class="header__mid_icons  d-flex justify-content-between flex-row align-items-center">
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn  header__mid_sprite-bell position-relative">
                         <span class="header__mid_sprite-bell-notif-default position-absolute start-100 top-0   translate-middle d-flex flex-row justify-content-center align-items-center">
                             <span class="fw-bold">12</span> <span class="visually-hidden">unread messages</span>
                         </span>
-                            </button>
-                        </div>
+                        </button>
                     </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <button type="button" class="btn header__mid_sprite-email position-relative">
-
-                                <span class="header__mid_sprite-email-warning position-absolute start-100 top-0 translate-middle"></span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <button class="header__mid_sprite-settings"></button>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-            <div class="header__right d-flex flex-row align-items-center">
 
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn header__mid_sprite-email position-relative">
 
-                <div class="row gx-9">
-                    <div class="col">
-                        <div class="header__right_avatar"></div>
+                            <span class="header__mid_sprite-email-warning position-absolute start-100 top-0 translate-middle"></span>
+                        </button>
                     </div>
+                </div>
+
+                <div class="row">
                     <div class="col">
-                        <div class="header__right_container d-flex flex-column">
-                            <h5>Madison Eve</h5>
-                            <p>Admin</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <button class="header__right_chevron" ></button>
+                        <button class="header__mid_sprite-settings"></button>
                     </div>
                 </div>
 
             </div>
-        </header>
-    </div>
+        </div>
+        <div class="header__right d-flex flex-row align-items-center">
+
+
+            <div class="row">
+                <div class="col">
+                    <div class="header__right_avatar"></div>
+                </div>
+                <div class="col">
+                    <div class="header__right_container d-flex flex-column">
+                        <h5>Madison Eve</h5>
+                        <p>Admin</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="header__right_chevron"></button>
+                </div>
+            </div>
+
+        </div>
+    </header>
 
 
     <!---------------------- Task Board ----------------------------->
-    <div class="task">
+    <div class="task d-flex flex-column">
 
-        <div class="task__calendar">
+        <div class="task__calendar d-flex flex-row justify-content-between">
             <div class="task__calendar__date">
                 <h1>May, 2021</h1>
                 <button class="task__calendar__date_arrow_left"></button>
@@ -452,7 +453,9 @@
     <div class="popup__body">
         <div class="popup__content">
             <div class="popup__close">
-                <a href="##" class="popup__close_href"><div class="popup__close_cross"></div></a>
+                <a href="##" class="popup__close_href">
+                    <div class="popup__close_cross"></div>
+                </a>
             </div>
 
             <div class="popup__header"><h1>Feature 3</h1></div>
