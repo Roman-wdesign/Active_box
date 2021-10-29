@@ -8,15 +8,10 @@
 
 
   &__body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 25px;
     border-radius: 20px;
     background-color: #FFFFFF;
     width: 70%;
     height: 90%;
-    position: relative;
   }
 
   &__content {
@@ -27,11 +22,7 @@
   }
 
   &__description {
-    margin: 10px;
-
     &_image {
-      margin: 10px 0 15px 0;
-
       width: 500px;
       height: 200px;
 
@@ -42,125 +33,109 @@
   }
 
   &__activity {
-    &_container {
-      margin: 10px 0;
-      @include flex_1;
-    }
-
-    &__editor {
-      margin: 10px 0;
+    &-editor {
       background-color: #EDF1FB;
-      display: flex;
-      flex-direction: row;
       width: 500px;
 
-      &_sign_1 {
+      &-sign-1 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_1.svg');
       }
 
-      &_sign_2 {
+      &-sign-2 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_2.svg');
       }
 
-      &_sign_3 {
+      &-sign-3 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_3.svg');
       }
 
-      &_sign_4 {
+      &-sign-4 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_4.svg');
       }
 
-      &_sign_5 {
+      &-sign-5 {
         @include svg_h;
         background-image: url($path-editor  + 'editor_line_black.svg');
       }
 
-      &_sign_6 {
+      &-sign-6 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_5.svg');
       }
 
-      &_sign_7 {
+      &-sign-7 {
         @include svg_h;
         background-image: url($path-editor  + 'editor_line.svg');
       }
 
-      &_sign_8 {
+      &-sign-8 {
         @include svg_h;
         background-image: url($path-editor  + 'ol_sign.svg');
       }
 
-      &_sign_9 {
+      &-sign-9 {
         @include svg_h;
         background-image: url($path-editor  + 'ul_sign.svg');
       }
 
-      &_sign_10 {
+      &-sign-10 {
         @include svg_h;
         background-image: url($path-editor  + 'editor_line.svg');
       }
 
-      &_sign_11 {
+      &-sign-11 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_picture.svg');
 
       }
 
-      &_sign_12 {
+      &-sign-12 {
         @include svg_h;
         background-image: url($path-editor  + 'editor_line.svg');
       }
 
-      &_sign_13 {
+      &-sign-13 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_6.svg');
       }
 
-      &_sign_14 {
+      &-sign-14 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_6_mod.svg');
       }
 
-      &_sign_15 {
+      &-sign-15 {
         @include svg_h;
         background-image: url($path-editor  + 'editor_line.svg');
       }
 
-      &_sign_16 {
+      &-sign-16 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_right_arrow.svg');
       }
 
-      &_sign_17 {
+      &-sign-17 {
         @include svg_h;
         background-image: url($path-editor  + 'sign_left_arrow.svg');
       }
     }
 
-    &__buttons {
-      margin: 15px 0 10px 0;
-      display: flex;
-      flex-direction: row;
-
-      &_comment {
-        margin: 0 10px 0 0;
-        @include main_row;
+    &_buttons {
+      &-comment {
+        //margin: 0 10px 0 0;
         color: $White;
-        justify-content: center;
         background-color: $Blue;
         height: 40px;
         width: 120px;
         border-radius: 50px;
       }
 
-      &_cancel {
-        @include main_row;
+      &-cancel {
         color: $Secondary_Text;
-        justify-content: center;
         background-color: $White;
         height: 40px;
         width: 120px;
@@ -168,9 +143,9 @@
       }
     }
 
-    &__user {
+    &_user {
 
-      &_img {
+      &-img {
         cursor: pointer;
         background-repeat: no-repeat;
         background-position: center;
@@ -179,11 +154,11 @@
         background-image: url($path-img  + 'placeholder.png');
       }
 
-      &_name {
+      &-name {
         padding: 0 20px;
       }
 
-      &_time_ago {
+      &-time-ago {
 
       }
     }
@@ -203,25 +178,25 @@
       color: $Primary_Text;
     }
 
-    &__assignee {
+    &_assignee {
       color: $Secondary_Text;
       @include popup_1;
       @include flex_1;
     }
 
-    &__reporter {
+    &_reporter {
       color: $Secondary_Text;
       @include popup_1;
       @include flex_1;
     }
 
-    &__sprint {
+    &_sprint {
       color: $Secondary_Text;
       @include popup_1;
       @include flex_1;
     }
 
-    &__tempo {
+    &_tempo {
       color: $Secondary_Text;
       @include popup_1;
       @include flex_1;
@@ -244,10 +219,6 @@
       width: 40px;
       height: 40px;
       background-image: url($path-ico + 'close_window.svg');
-    }
-
-    &_circle {
-
     }
 
     &_href {

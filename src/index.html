@@ -36,10 +36,10 @@
                     <a href="#" class="sidebar__sprite_list"></a>
                     <a href="#" class="sidebar__sprite_calendar"></a>
                     <a href="#" class="sidebar__sprite_todo"></a>
-                    <a href="#" class="sidebar__sprite_prime_settings"></a>
+                    <a href="#" class="sidebar__sprite-prime-settings"></a>
                     <a href="#" class="sidebar__sprite_mess d-flex flex-column">
                         <a href="#" class="sidebar__sprite_ic_messages"></a>
-                        <a href="#" class="sidebar__sprite_ic_messages_warning_2"></a>
+                        <a href="#" class="sidebar__sprite-ic-messages_warning_2"></a>
                     </a>
                 </div>
             </div>
@@ -55,17 +55,17 @@
     <header class="header d-flex flex-row justify-content-between align-items-center position-relative">
 
 
-        <div class="row ">
+        <div class="row gx-1">
             <div class="header__left d-flex flex-row justify-content-between align-items-center">
 
                 <div class="col">
-                    <div class="header__left_burger d-flex flex-row justify-content-between align-items-center">
-                        <button class="header__left_burger_ico"></button>
+                    <div class="header__left_burger d-flex flex-row justify-content-between align-items-center p-3">
+                        <button class="header__left_burger-ico"></button>
                         <h1 class="header__title">Projects</h1>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="header__button d-flex flex-row px-4">
+                    <div class="header__button d-flex flex-row px-4 ">
                         <div class="header__button-btn d-flex flex-row  align-items-center">Roadmap</div>
                         <div class="header__button-btn_active">Kanban</div>
                         <div class="header__button-btn d-flex flex-row  align-items-center">List</div>
@@ -88,7 +88,7 @@
                     <div class="col">
                         <button type="button" class="btn  header__mid_sprite-bell position-relative">
                         <span class="header__mid_sprite-bell-notif-default position-absolute start-100 top-0   translate-middle d-flex flex-row justify-content-center align-items-center">
-                            <span class="fw-bold">12</span> <span class="visually-hidden">unread messages</span>
+                            <span>12</span>
                         </span>
                         </button>
                     </div>
@@ -111,12 +111,10 @@
 
             </div>
         </div>
-        <div class="header__right d-flex flex-row align-items-center">
+        <div class="header__right d-flex flex-row align-items-center gap-4">
 
-
-            <div class="row">
                 <div class="col">
-                    <div class="header__right_avatar"></div>
+                    <div class="header__right-avatar"></div>
                 </div>
                 <div class="col">
                     <div class="header__right_container d-flex flex-column">
@@ -125,9 +123,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <button class="header__right_chevron"></button>
+                    <button class="header__right-chevron"></button>
                 </div>
-            </div>
+
 
         </div>
     </header>
@@ -450,7 +448,7 @@
     </div>
 </div>
 <div class="popup d-none justify-content-center align-items-center position-fixed" id="popup">
-    <div class="popup__body">
+    <div class="popup__body d-flex flex-row justify-content-between position-relative p-5">
         <div class="popup__content">
             <div class="popup__close">
                 <a href="##" class="popup__close_href">
@@ -459,7 +457,7 @@
             </div>
 
             <div class="popup__header"><h1>Feature 3</h1></div>
-            <div class="popup__description"><strong>Description</strong>
+            <div class="popup__description m-3"><strong>Description</strong>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut
                     labore
@@ -467,28 +465,32 @@
                     nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure <br>dolor
                 </p>
-                <div class="popup__description_image"></div>
+                <div class="popup__description_image mt-3 mb-3"></div>
             </div>
             <div class="popup__activity">
                 <div class="popup__activity_header"><strong>Activity</strong></div>
-                <div class="popup__activity__editor">
-                    <div class="popup__activity__editor_sign_1"></div>
-                    <div class="popup__activity__editor_sign_2"></div>
-                    <div class="popup__activity__editor_sign_3"></div>
-                    <div class="popup__activity__editor_sign_4"></div>
-                    <div class="popup__activity__editor_sign_5"></div>
-                    <div class="popup__activity__editor_sign_6"></div>
-                    <div class="popup__activity__editor_sign_7"></div>
-                    <div class="popup__activity__editor_sign_8"></div>
-                    <div class="popup__activity__editor_sign_9"></div>
-                    <div class="popup__activity__editor_sign_10"></div>
-                    <div class="popup__activity__editor_sign_11"></div>
-                    <div class="popup__activity__editor_sign_12"></div>
-                    <div class="popup__activity__editor_sign_13"></div>
-                    <div class="popup__activity__editor_sign_14"></div>
-                    <div class="popup__activity__editor_sign_15"></div>
-                    <div class="popup__activity__editor_sign_16"></div>
-                    <div class="popup__activity__editor_sign_17"></div>
+                <div class="row  gx-5">
+                    <div class="col">
+                        <div class="popup__activity-editor d-flex flex-row">
+                            <div class="popup__activity-editor-sign-1"></div>
+                            <div class="popup__activity-editor-sign-2"></div>
+                            <div class="popup__activity-editor-sign-3"></div>
+                            <div class="popup__activity-editor-sign-4"></div>
+                            <div class="popup__activity-editor-sign-5"></div>
+                            <div class="popup__activity-editor-sign-6"></div>
+                            <div class="popup__activity-editor-sign-7"></div>
+                            <div class="popup__activity-editor-sign-8"></div>
+                            <div class="popup__activity-editor-sign-9"></div>
+                            <div class="popup__activity-editor-sign-10"></div>
+                            <div class="popup__activity-editor-sign-11"></div>
+                            <div class="popup__activity-editor-sign-12"></div>
+                            <div class="popup__activity-editor-sign-13"></div>
+                            <div class="popup__activity-editor-sign-14"></div>
+                            <div class="popup__activity-editor-sign-15"></div>
+                            <div class="popup__activity-editor-sign-16"></div>
+                            <div class="popup__activity-editor-sign-17"></div>
+                        </div>
+                    </div>
                 </div>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been
@@ -497,15 +499,25 @@
                     type<br>
                     and scrambled it to make a type <b>specimen book</b>
                 </p>
-                <div class="popup__activity__buttons">
-                    <button class="popup__activity__buttons_comment">Comment</button>
-                    <button class="popup__activity__buttons_cancel">Cancel</button>
+                <div class="popup__activity_buttons row d-flex flex-row mt-3 mb-3 ">
+
+                        <div class="col">
+                            <button class="popup__activity_buttons-comment  d-flex flex-row align-items-center justify-content-center">
+                                Comment
+                            </button>
+                        </div>
+
+                        <div class="col">
+                            <button class="popup__activity_buttons-cancel d-flex flex-row align-items-center justify-content-center">
+                                Cancel
+                            </button>
+                        </div>
                 </div>
-                <div class="popup__activity__user">
-                    <div class="popup__activity_container">
-                        <div class="popup__activity__user_img"></div>
-                        <div class="popup__activity__user_name"><strong>Robert Adamski</strong></div>
-                        <div class="popup__activity__user_time_ago"><p>20 minutes ago</p></div>
+                <div class="popup__activity_user">
+                    <div class="popup__activity_container d-flex flex-row align-items-center mt-3 mb-3">
+                        <div class="popup__activity_user-img"></div>
+                        <div class="popup__activity_user-name"><strong>Robert Adamski</strong></div>
+                        <div class="popup__activity_user-time-ago">20 minutes ago</div>
                     </div>
 
                     <p>
@@ -521,7 +533,7 @@
             </div>
         </div>
         <div class="popup__teams">
-            <div class="popup__teams__assignee">
+            <div class="popup__teams_assignee">
                 <p>Assignee</p>
                 <div class="task__events_one_image">
                     <div class="task__placeholder"></div>
@@ -531,7 +543,7 @@
                     <div class="task__placeholder-more"><h4>5+</h4></div>
                 </div>
             </div>
-            <div class="popup__teams__reporter">
+            <div class="popup__teams_reporter">
                 <p>Reporter</p>
                 <div class="task__events_one_image">
                     <div class="task__placeholder"></div>
@@ -541,13 +553,13 @@
                     <div class="task__placeholder-more"><h4>5+</h4></div>
                 </div>
             </div>
-            <div class="popup__teams__sprint">
+            <div class="popup__teams_sprint">
                 <p>Sprint</p>
                 <div class="task__events_one_image">
                     <p>Срочные работы</p>
                 </div>
             </div>
-            <div class="popup__teams__tempo">
+            <div class="popup__teams_tempo">
                 <p>Tempo</p>
                 <div class="task__events_one_image">
                     <div class="popup__teams_yellow-circle"></div>

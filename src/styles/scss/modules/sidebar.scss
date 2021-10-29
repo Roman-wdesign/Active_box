@@ -41,11 +41,11 @@
       background-image: url($path-ico + 'todo.svg');
     }
 
-    &_prime_settings {
+    &-prime-settings {
       @include svg_s;
       background-image: url($path-ico + 'prime_settings.svg');
     }
-    &_ic_messages {
+    &-ic-messages {
 
       @include svg_s;
       background-image: url($path-ico + 'ic_messages.svg');

@@ -11,7 +11,7 @@
 
   &__left {
     &_burger {
-      &_ico {
+      &-ico {
         margin: 0 10px 0 0;
         @include svg_h;
         background-image: url($path-ico + 'burger.svg');
@@ -55,11 +55,11 @@
   }
 
   &__right {
-    &_avatar {
+    &-avatar {
       @include user-avatar;
     }
 
-    &_chevron {
+    &-chevron {
       @include svg_h;
       background-image: url($path-ico + 'ic_chevron.svg');
     }
@@ -67,7 +67,6 @@
 
   &__button {
     border-radius: 50px;
-    //margin: 0 25px;
     background-color: $Primary_Highlight;
 
     &-btn {
