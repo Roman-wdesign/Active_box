@@ -53,13 +53,10 @@
     <!---------------------- Header ----------------------------->
 
     <header class="header d-flex flex-row justify-content-between align-items-center position-relative">
-
-
-        <div class="row gx-1">
-            <div class="header__left d-flex flex-row justify-content-between align-items-center">
-
+        <div class="col">
+            <div class="header__left d-flex flex-row justify-content-between align-items-center gap-2">
                 <div class="col">
-                    <div class="header__left_burger d-flex flex-row justify-content-between align-items-center p-3">
+                    <div class="header__left_burger d-flex flex-row justify-content-between align-items-center gap-2 p-3">
                         <button class="header__left_burger-ico"></button>
                         <h1 class="header__title">Projects</h1>
                     </div>
@@ -73,45 +70,48 @@
                 </div>
             </div>
         </div>
-        <div class="header__mid d-flex flex-row justify-content-between">
-            <div class="header__mid_dropdown">
-                <select name="dropdown" id="dropdown">
-                    <option value="All projects">All projects</option>
-                    <option value="Second">Second</option>
-                    <option value="Third">Third</option>
-                    <option value="Fourth">Fourth</option>
-                </select>
+        <div class="col">
+            <div class="header__mid d-flex flex-row justify-content-between">
+                <div class="header__mid_dropdown">
+                    <select name="dropdown" id="dropdown">
+                        <option value="All projects">All projects</option>
+                        <option value="Second">Second</option>
+                        <option value="Third">Third</option>
+                        <option value="Fourth">Fourth</option>
+                    </select>
 
-            </div>
-            <div class="header__mid_icons  d-flex justify-content-between flex-row align-items-center">
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn  header__mid_sprite-bell position-relative">
+                </div>
+                <div class="header__mid_icons  d-flex justify-content-between flex-row align-items-center">
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn  header__mid_sprite-bell position-relative">
                         <span class="header__mid_sprite-bell-notif-default position-absolute start-100 top-0   translate-middle d-flex flex-row justify-content-center align-items-center">
                             <span>12</span>
                         </span>
-                        </button>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn header__mid_sprite-email position-relative">
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn header__mid_sprite-email position-relative">
 
-                            <span class="header__mid_sprite-email-warning position-absolute start-100 top-0 translate-middle"></span>
-                        </button>
+                                <span class="header__mid_sprite-email-warning position-absolute start-100 top-0 translate-middle"></span>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col">
-                        <button class="header__mid_sprite-settings"></button>
+                    <div class="row">
+                        <div class="col">
+                            <button class="header__mid_sprite-settings"></button>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-        <div class="header__right d-flex flex-row align-items-center gap-4">
+        <div class="col">
+            <div class="header__right d-flex flex-row align-items-center gap-4">
 
                 <div class="col">
                     <div class="header__right-avatar"></div>
@@ -127,12 +127,16 @@
                 </div>
 
 
+            </div>
         </div>
+
+
+
     </header>
 
 
     <!---------------------- Task Board ----------------------------->
-    <div class="task d-flex flex-column">
+    <div class="task d-flex flex-column p-5">
 
         <div class="task__calendar d-flex flex-row justify-content-between">
             <div class="task__calendar__date">
@@ -164,16 +168,16 @@
             </div>
         </div>
 
-        <div class="task__calendar__months_scale">
-            <div class="task__calendar__months_scale_may"><p>May, 2021</p></div>
-            <div class="task__calendar__months_scale_june"><p>June, 2021</p></div>
+        <div class="task__calendar_months-scale d-flex flex-row justify-content-between align-items-center">
+            <div class="task__calendar_months-scale-may d-flex flex-row justify-content-center align-items-center"><p>May, 2021</p></div>
+            <div class="task__calendar_months-scale-june d-flex flex-row justify-content-center align-items-center"><p>June, 2021</p></div>
         </div>
-        <div class="task__calendar__months">
+        <div class="task__calendar_months">
 
-            <div class="task__calendar__months_main">
+            <div class="task__calendar_months-main d-flex flex-column">
 
-                <ol class="task__calendar__months_days">
-                    <div class="task__calendar__months_days_li d-flex flex-column align-items-center">
+                <ol class="task__calendar_months-days d-flex flex-row justify-content-between align-items-center">
+                    <div class="task__calendar_months-days-li d-flex flex-column align-items-center">
                         <li>Mo</li>
                         <li><strong>1</strong></li>
                     </div>
@@ -363,26 +367,43 @@
                         <li><strong>15</strong></li>
                     </div>
                 </ol>
-                <!--                <hr class="border_1">-->
+
             </div>
 
         </div>
         <div class="task__side-content d-flex flex-row">
-            <div class="task_content__lines">
-                <hr class="task_content__lines_border_2">
-            </div>
-            <aside class="task_side">
-                <h5> Feature 1</h5>
-                <h5> Feature 2</h5>
-                <h5> Feature 3</h5>
-                <h5> Feature 4</h5>
+<!--            <div class="task_content__lines">-->
+<!--                <hr class="task_content__lines_border-2">-->
+<!--            </div>-->
+            <aside class="task_side d-flex flex-column justify-content-start align-items-center gap-3">
+                <div class="row mt-5 mb-5">
+                    <div class="col">
+                        <h5> Feature 1</h5>
+                    </div>
+                </div>
+                <div class="row mt-5 mb-5">
+                    <div class="col">
+                        <h5> Feature 2</h5>
+                    </div>
+                </div>
+                <div class="row mt-5 mb-5">
+                    <div class="col">
+                        <h5> Feature 3</h5>
+                    </div>
+                </div>
+                <div class="row mt-5 mb-5">
+                    <div class="col">
+                        <h5> Feature 4</h5>
+
+                    </div>
+                </div>
             </aside>
             <div class="task__events">
-                <div class="task__events__row">
-                    <div class="task__events_one">
+                <div class="task__events__row ">
+                    <div class="task__events_one d-flex flex-row align-items-center">
                         <div class="task__events_one_indicator_1"></div>
                         <h4>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</h4>
-                        <div class="task__events_one_image">
+                        <div class="task__events_one_image d-flex flex-row align-items-center">
                             <div class="task__placeholder"></div>
                             <div class="task__placeholder-1"></div>
                             <div class="task__placeholder-2"></div>
@@ -399,10 +420,10 @@
                 <div class="task__events__row">
                     <div class="task__events__void"></div>
                     <div class="task__events__void"></div>
-                    <div class="task__events_one">
+                    <div class="task__events_one d-flex flex-row align-items-center">
                         <div class="task__events_one_indicator_2"></div>
                         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-                        <div class="task__events_one_image">
+                        <div class="task__events_one_image d-flex flex-row align-items-center">
                             <div class="task__placeholder"></div>
                             <div class="task__placeholder-1"></div>
                         </div>
@@ -416,10 +437,10 @@
                     <div class="task__events__void"></div>
                     <div class="task__events__void"></div>
                     <div class="task__events__void"></div>
-                    <div class="task__events_one">
+                    <div class="task__events_one d-flex flex-row align-items-center">
                         <div class="task__events_one_indicator_3"></div>
                         <h4>Lorem ipsum dolor ...</h4>
-                        <div class="task__events_one_image">
+                        <div class="task__events_one_image  d-flex flex-row align-items-center">
                             <div class="task__placeholder"></div>
                             <div class="task__placeholder-1"></div>
                         </div>
@@ -429,10 +450,10 @@
                 <div class="task__events__row">
                     <div class="task__events__void"></div>
                     <div class="task__events__void"></div>
-                    <div class="task__events_one">
+                    <div class="task__events_one d-flex flex-row align-items-center">
                         <div class="task__events_one_indicator_4"></div>
                         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-                        <div class="task__events_one_image">
+                        <div class="task__events_one_image  d-flex flex-row align-items-center">
                             <div class="task__placeholder"></div>
                             <div class="task__placeholder-1"></div>
                         </div>
@@ -447,10 +468,12 @@
         </div>
     </div>
 </div>
-<div class="popup d-flex justify-content-center align-items-center position-fixed" id="popup">
+
+<!---------------------- Popup ----------------------------->
+<div class="popup d-none justify-content-center align-items-center position-fixed" id="popup">
     <div class="popup__body d-flex flex-row justify-content-between position-relative p-5">
         <div class="popup__content">
-            <div class="popup__close">
+            <div class="popup__close position-absolute">
                 <a href="##" class="popup__close_href">
                     <div class="popup__close_cross"></div>
                 </a>
@@ -514,10 +537,17 @@
                         </div>
                 </div>
                 <div class="popup__activity_user">
-                    <div class="popup__activity_container d-flex flex-row align-items-center mt-3 mb-3">
-                        <div class="popup__activity_user-img"></div>
-                        <div class="popup__activity_user-name"><strong>Robert Adamski</strong></div>
-                        <div class="popup__activity_user-time-ago">20 minutes ago</div>
+                    <div class="popup__activity_container d-flex flex-row align-items-center mt-3 mb-3 gap-3">
+                        <div class="col">
+                            <div class="popup__activity_user-img"></div>
+                        </div>
+                        <div class="col">
+                            <div class="popup__activity_user-name"><strong>Robert Adamski</strong></div>
+
+                        </div>
+                        <div class="col">
+                            <div class="popup__activity_user-time-ago">20 minutes ago</div>
+                        </div>
                     </div>
 
                     <p>
@@ -532,38 +562,54 @@
                 </div>
             </div>
         </div>
-        <div class="popup__teams">
-            <div class="popup__teams_assignee">
-                <p>Assignee</p>
-                <div class="task__events_one_image">
-                    <div class="task__placeholder"></div>
-                    <div class="task__placeholder-1"></div>
-                    <div class="task__placeholder-2"></div>
-                    <div class="task__placeholder-3"></div>
-                    <div class="task__placeholder-more"><h4>5+</h4></div>
+        <div class="popup__teams  pt-3" >
+            <div class="row mt-5 mb-5">
+                <div class="col">
+                    <div class="popup__teams_assignee d-flex flex-row align-items-center gap-3">
+                        <p>Assignee</p>
+                        <div class="task__events_one_image">
+                            <div class="task__placeholder"></div>
+                            <div class="task__placeholder-1"></div>
+                            <div class="task__placeholder-2"></div>
+                            <div class="task__placeholder-3"></div>
+                            <div class="task__placeholder-more"><h4>5+</h4></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="popup__teams_reporter">
-                <p>Reporter</p>
-                <div class="task__events_one_image">
-                    <div class="task__placeholder"></div>
-                    <div class="task__placeholder-1"></div>
-                    <div class="task__placeholder-2"></div>
-                    <div class="task__placeholder-3"></div>
-                    <div class="task__placeholder-more"><h4>5+</h4></div>
+            <div class="row mt-5 mb-5">
+                <div class="col">
+                    <div class="popup__teams_reporter d-flex flex-row align-items-center gap-3">
+                        <p>Reporter</p>
+                        <div class="task__events_one_image">
+                            <div class="task__placeholder"></div>
+                            <div class="task__placeholder-1"></div>
+                            <div class="task__placeholder-2"></div>
+                            <div class="task__placeholder-3"></div>
+                            <div class="task__placeholder-more"><h4>5+</h4></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="popup__teams_sprint">
-                <p>Sprint</p>
-                <div class="task__events_one_image">
-                    <p>Срочные работы</p>
+            <div class="row mt-5 mb-5">
+                <div class="col">
+                    <div class="popup__teams_sprint d-flex flex-row align-items-center pb-3 gap-5">
+                        <p>Sprint</p>
+                        <div class="task__events_one_image">
+                            <p>Срочные работы</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="popup__teams_tempo">
-                <p>Tempo</p>
-                <div class="task__events_one_image">
-                    <div class="popup__teams_yellow-circle"></div>
-                    <strong class="popup__teams_strong-1">Medium</strong>
+            <div class="row mt-5 mb-5">
+                <div class="col">
+                    <div class="popup__teams_tempo d-flex flex-row align-items-center pb-3 gap-5">
+                        <p>Tempo</p>
+                        <div class="task__events_one_image gap-3">
+                            <div class="popup__teams_yellow-circle"></div>
+                            <strong class="popup__teams_strong-1">Medium</strong>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,13 +1,10 @@
 .task {
-  padding: 20px 10px 0 0;
   margin: 0 0 0 200px;
   background-color: $Primary_Highlight;
 
   &__side-content {
-
     &__lines {
-
-      &_border_2 {
+      &_border-2 {
         @include border_2;
       }
     }
@@ -15,20 +12,11 @@
 
   &_side {
     width: 150px;
-    margin: 0 0 0 20px;
     z-index: 999;
 
-    h5 {
-      padding: 50px 0;
-    }
-
-    display: flex;
-    flex-direction: column;
   }
 
   &__calendar {
-    margin: 0 25px 0 0;
-
     &_blue-line::before {
       content: '';
       opacity: 0.5;
@@ -151,53 +139,23 @@
       }
     }
 
-    &__months {
-      padding: 0 0 10px 15px;
-
-      &_main {
-        display: flex;
-        flex-direction: column;
-      }
-
-      &_scale {
-        margin: 30px 0 0 0;
-        padding: 0 10px 0 55px;
-        @include flex_1;
-        justify-content: space-between;
-
-        &_may {
-
-          p {
-
-            margin: 0;
-          }
-
-          @include flex_1;
-          justify-content: center;
+    &_months {
+      &-scale {
+        &-may {
           height: 32px;
           width: 67%;
           background-color: #e2f4fa;
         }
 
-        &_june {
-
-          p {
-
-            margin: 0;
-          }
-
+        &-june {
           background-color: #FFFFFF;
-          @include flex_1;
-          justify-content: center;
           height: 32px;
           width: 33%;
         }
       }
 
-      &_days {
+      &-days {
         z-index: 500;
-        @include flex_1;
-        justify-content: space-between;
       }
     }
   }
@@ -217,43 +175,32 @@
     //  background-size: 40px 40px;
     //  background-position: 10px 10px, 10px -10px;
 
-    padding: 5px 0 0 55px;
-
     &_one {
 
       &_image {
-        margin: 0 0 0 25px;
-        @include flex_1;
-
         p {
-          padding: 0 0 0 30px;
           font-size: 16px;
           color: $Blue;
         }
       }
 
-      @include flex_1;
-
       &_indicator_1 {
-        margin: 0 10px 0 0;
         @include indicator;
         background-color: $primary;
       }
 
       &_indicator_2 {
-        margin: 0 10px 0 20px;
         @include indicator;
         background-color: $Blue;
       }
 
       &_indicator_3 {
-        margin: 0 10px 0 160px;
         @include indicator;
         background-color: $secondary;
       }
 
       &_indicator_4 {
-        margin: 0 10px 0 0;
+
         @include indicator;
         background-color: $Tertiary;
       }
@@ -268,8 +215,8 @@
       @include flex_4;
       justify-content: center;
       @include dashed;
-      width: 150px;
-      height: 120px;
+      width: 120px;
+      height: 100px;
     }
   }
 

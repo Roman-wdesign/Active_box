@@ -126,7 +126,6 @@
 
     &_buttons {
       &-comment {
-        //margin: 0 10px 0 0;
         color: $White;
         background-color: $Blue;
         height: 40px;
@@ -153,22 +152,13 @@
         height: 40px;
         background-image: url($path-img  + 'placeholder.png');
       }
-
-      &-name {
-        padding: 0 20px;
-      }
-
-      &-time-ago {
-
-      }
     }
   }
 
   &__teams {
-    padding: 10px 0 0 30px;
 
     &_yellow-circle {
-      margin: 0 10px 0 20px;
+
       width: 19px;
       height: 19px;
       background-color: $yellow;
@@ -181,30 +171,26 @@
     &_assignee {
       color: $Secondary_Text;
       @include popup_1;
-      @include flex_1;
     }
 
     &_reporter {
       color: $Secondary_Text;
       @include popup_1;
-      @include flex_1;
     }
 
     &_sprint {
       color: $Secondary_Text;
       @include popup_1;
-      @include flex_1;
+
     }
 
     &_tempo {
       color: $Secondary_Text;
       @include popup_1;
-      @include flex_1;
     }
   }
 
   &__close {
-    position: absolute;
     right: 0;
     top: 0;
 
