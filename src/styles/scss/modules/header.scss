@@ -20,15 +20,18 @@
   }
 
   &__mid {
-    width: 30rem;
     &_icons{
       width: 15rem;
     }
     &_sprite {
+      &-number{
+        color: white ;
+      }
       &-bell {
        @include svg_notifications_m;
         background-image: url($path-ico + 'bell.svg');
         color: $Light;
+
 
         &-notif-default {
          @include svg_notifications;
@@ -55,11 +58,15 @@
   }
 
   &__right {
+    &_user-name{
+      white-space: nowrap;
+    }
     &-avatar {
       @include user-avatar;
     }
 
     &-chevron {
+
       @include svg_h;
       background-image: url($path-ico + 'ic_chevron.svg');
     }

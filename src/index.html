@@ -52,11 +52,11 @@
 <div class="container-fluid">
     <!---------------------- Header ----------------------------->
 
-    <header class="header d-flex flex-row justify-content-between align-items-center position-relative">
-        <div class="col">
+    <header class="header d-flex row flex-row justify-content-between align-items-center position-relative gap-5">
+        <div class="col-4">
             <div class="header__left d-flex flex-row justify-content-between align-items-center gap-2">
                 <div class="col">
-                    <div class="header__left_burger d-flex flex-row justify-content-between align-items-center gap-2 p-3">
+                    <div class="header__left_burger d-flex flex-row justify-content-start align-items-center gap-2 p-3 ">
                         <button class="header__left_burger-ico"></button>
                         <h1 class="header__title">Projects</h1>
                     </div>
@@ -70,66 +70,72 @@
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="header__mid d-flex flex-row justify-content-between">
-                <div class="header__mid_dropdown">
-                    <select name="dropdown" id="dropdown">
-                        <option value="All projects">All projects</option>
-                        <option value="Second">Second</option>
-                        <option value="Third">Third</option>
-                        <option value="Fourth">Fourth</option>
-                    </select>
+        <div class="col-3">
+            <div class="header__mid d-flex flex-row justify-content-end gap-1 align-items-center">
+                <div class="col-4">
+                    <div class="header__mid_dropdown">
+                        <select name="dropdown" id="dropdown">
+                            <option value="All projects">All projects</option>
+                            <option value="Second">Second</option>
+                            <option value="Third">Third</option>
+                            <option value="Fourth">Fourth</option>
+                        </select>
 
+                    </div>
                 </div>
-                <div class="header__mid_icons  d-flex justify-content-between flex-row align-items-center">
-                    <div class="row">
-                        <div class="col">
-                            <button type="button" class="btn  header__mid_sprite-bell position-relative">
+                <div class="col">
+                    <div class="header__mid_icons  d-flex justify-content-between flex-row align-items-center">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn  header__mid_sprite-bell position-relative">
                         <span class="header__mid_sprite-bell-notif-default position-absolute start-100 top-0   translate-middle d-flex flex-row justify-content-center align-items-center">
-                            <span>12</span>
+                            <strong class="header__mid_sprite-number">12</strong>
                         </span>
-                            </button>
+                                </button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col">
-                            <button type="button" class="btn header__mid_sprite-email position-relative">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn header__mid_sprite-email position-relative">
 
-                                <span class="header__mid_sprite-email-warning position-absolute start-100 top-0 translate-middle"></span>
-                            </button>
+                                    <span class="header__mid_sprite-email-warning position-absolute start-100 top-0 translate-middle"></span>
+                                </button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col">
-                            <button class="header__mid_sprite-settings"></button>
+                        <div class="row">
+                            <div class="col">
+                                <button class="header__mid_sprite-settings"></button>
+                            </div>
                         </div>
+
                     </div>
 
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="header__right d-flex flex-row align-items-center gap-4">
+        <div class="col-3">
+            <div class="header__right d-flex   align-items-center justify-content-end">
 
-                <div class="col">
+                <div class="col-4">
                     <div class="header__right-avatar"></div>
                 </div>
-                <div class="col">
-                    <div class="header__right_container d-flex flex-column">
-                        <h5>Madison Eve</h5>
-                        <p>Admin</p>
+                <div class="col-5 ">
+                    <div class="header__right_container row d-flex flex-column">
+                        <div class="row">
+                            <div class="col header__right_user-name"><h5>Madison Eve</h5></div>
+                            <div class="col"><p>Admin</p></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <button class="header__right-chevron"></button>
+                <div class="col-1">
+                    <button class="header__right-chevron "></button>
                 </div>
 
 
             </div>
         </div>
-
 
 
     </header>
@@ -138,7 +144,7 @@
     <!---------------------- Task Board ----------------------------->
     <div class="task d-flex flex-column p-5">
 
-        <div class="task__calendar d-flex flex-row justify-content-between">
+        <div class="task__calendar d-flex flex-row justify-content-between align-items-center p-3">
             <div class="task__calendar__date">
                 <h1>May, 2021</h1>
                 <button class="task__calendar__date_arrow_left"></button>
@@ -169,212 +175,218 @@
         </div>
 
         <div class="task__calendar_months-scale d-flex flex-row justify-content-between align-items-center">
-            <div class="task__calendar_months-scale-may d-flex flex-row justify-content-center align-items-center"><p>May, 2021</p></div>
-            <div class="task__calendar_months-scale-june d-flex flex-row justify-content-center align-items-center"><p>June, 2021</p></div>
+
+            <div class="task__calendar_months-scale-may d-flex flex-row justify-content-center align-items-center"><p>
+                May, 2021</p></div>
+            <div class="task__calendar_months-scale-june d-flex flex-row justify-content-center align-items-center"><p>
+                June, 2021</p></div>
         </div>
-        <div class="task__calendar_months">
 
-            <div class="task__calendar_months-main d-flex flex-column">
+        <div class="task__calendar_months-main d-flex flex-column d-flex justify-content-end flex-row">
 
-                <ol class="task__calendar_months-days d-flex flex-row justify-content-between align-items-center">
-                    <div class="task__calendar_months-days-li d-flex flex-column align-items-center">
-                        <li>Mo</li>
-                        <li><strong>1</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Tu</li>
-                        <li><strong>2</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>We</li>
-                        <li><strong>3</strong></li>
-                    </div>
-                    <div class="li">
+            <div class="task__calendar_months-days d-flex flex-row justify-content-between align-items-center">
+                <div class="li">
+                    <li>Mo</li>
+                    <li><strong>1</strong></li>
+                </div>
+                <div class="li">
+                    <li>Tu</li>
+                    <li><strong>2</strong></li>
+                </div>
+                <div class="li">
+                    <li>We</li>
+                    <li><strong>3</strong></li>
+                </div>
+                <div class="li">
+                    <li>Th</li>
+                    <li><strong>4</strong></li>
+                </div>
+                <div class="li">
+                    <li>Fr</li>
+                    <li><strong>5</strong></li>
+                </div>
+                <div class="li">
+                    <li>Sa</li>
+                    <li><strong>6</strong></li>
+                </div>
+                <div class="li">
+                    <li>Su</li>
+                    <li><strong>7</strong></li>
+                </div>
+
+                <div class="li">
+                    <li>Mo</li>
+                    <li><strong>8</strong></li>
+                </div>
+                <div class="li">
+                    <li>Tu</li>
+                    <li><strong>9</strong></li>
+                </div>
+                <div class="li">
+                    <li>We</li>
+                    <li><strong>10</strong></li>
+                </div>
+                <div class="task__calendar_active-day">
+
+                    <div class="div d-flex flex-column align-items-center justify-content-center">
                         <li>Th</li>
-                        <li><strong>4</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Fr</li>
-                        <li><strong>5</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Sa</li>
-                        <li><strong>6</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Su</li>
-                        <li><strong>7</strong></li>
+                        <li class="task__calendar_blue-line d-flex flex-column align-items-center justify-content-center">
+                            <div class="task__calendar_number">11</div>
+                        </li>
+
                     </div>
 
-                    <div class="li">
-                        <li>Mo</li>
-                        <li><strong>8</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Tu</li>
-                        <li><strong>9</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>We</li>
-                        <li><strong>10</strong></li>
-                    </div>
-                    <div class="task__calendar_active-day">
-                        <li>Th</li>
+                    <div class="border_2"></div>
+                </div>
+                <div class="li">
+                    <li>Fr</li>
+                    <li><strong>12</strong></li>
+                </div>
+                <div class="li">
+                    <li>Sa</li>
+                    <li><strong>13</strong></li>
+                </div>
+                <div class="li">
+                    <li>Su</li>
+                    <li><strong>14</strong></li>
+                </div>
 
-                        <li><strong class="task__calendar_blue-line">11</strong></li>
+                <div class="li">
+                    <li>Mo</li>
+                    <li><strong>15</strong></li>
+                </div>
+                <div class="li">
+                    <li>Tu</li>
+                    <li><strong>16</strong></li>
+                </div>
+                <div class="li">
+                    <li>We</li>
+                    <li><strong>17</strong></li>
+                </div>
+                <div class="li">
+                    <li>Th</li>
+                    <li><strong>18</strong></li>
+                </div>
+                <div class="li">
+                    <li>Fr</li>
+                    <li><strong>19</strong></li>
+                </div>
+                <div class="li">
+                    <li>Sa</li>
+                    <li><strong>20</strong></li>
+                </div>
+                <div class="li">
+                    <li>Su</li>
+                    <li><strong>21</strong></li>
+                </div>
 
-                        <div class="border_2"></div>
-                    </div>
-                    <div class="li">
-                        <li>Fr</li>
-                        <li><strong>12</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Sa</li>
-                        <li><strong>13</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Su</li>
-                        <li><strong>14</strong></li>
-                    </div>
+                <div class="li">
+                    <li>Mo</li>
+                    <li><strong>22</strong></li>
+                </div>
+                <div class="li">
+                    <li>Tu</li>
+                    <li><strong>23</strong></li>
+                </div>
+                <div class="li">
+                    <li>We</li>
+                    <li><strong>24</strong></li>
+                </div>
+                <div class="li">
+                    <li>Th</li>
+                    <li><strong>25</strong></li>
+                </div>
+                <div class="li">
+                    <li>Fr</li>
+                    <li><strong>26</strong></li>
+                </div>
+                <div class="li">
+                    <li>Sa</li>
+                    <li><strong>27</strong></li>
+                </div>
+                <div class="li">
+                    <li>Su</li>
+                    <li><strong>28</strong></li>
+                </div>
 
-                    <div class="li">
-                        <li>Mo</li>
-                        <li><strong>15</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Tu</li>
-                        <li><strong>16</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>We</li>
-                        <li><strong>17</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Th</li>
-                        <li><strong>18</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Fr</li>
-                        <li><strong>19</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Sa</li>
-                        <li><strong>20</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Su</li>
-                        <li><strong>21</strong></li>
-                    </div>
+                <div class="li">
+                    <li>Mo</li>
+                    <li><strong>29</strong></li>
+                </div>
+                <div class="li">
+                    <li>Tu</li>
+                    <li><strong>30</strong></li>
+                </div>
+                <div class="li">
+                    <li>We</li>
+                    <li><strong>1</strong></li>
+                </div>
+                <div class="li">
+                    <li>Th</li>
+                    <li><strong>2</strong></li>
+                </div>
+                <div class="li">
+                    <li>Fr</li>
+                    <li><strong>3</strong></li>
+                </div>
+                <div class="li">
+                    <li>Sa</li>
+                    <li><strong>4</strong></li>
+                </div>
+                <div class="li">
+                    <li>Su</li>
+                    <li><strong>5</strong></li>
+                </div>
 
-                    <div class="li">
-                        <li>Mo</li>
-                        <li><strong>22</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Tu</li>
-                        <li><strong>23</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>We</li>
-                        <li><strong>24</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Th</li>
-                        <li><strong>25</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Fr</li>
-                        <li><strong>26</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Sa</li>
-                        <li><strong>27</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Su</li>
-                        <li><strong>28</strong></li>
-                    </div>
+                <div class="li">
+                    <li>Mo</li>
+                    <li><strong>6</strong></li>
+                </div>
+                <div class="li">
+                    <li>Tu</li>
+                    <li><strong>7</strong></li>
+                </div>
+                <div class="li">
+                    <li>We</li>
+                    <li><strong>8</strong></li>
+                </div>
+                <div class="li">
+                    <li>Th</li>
+                    <li><strong>9</strong></li>
+                </div>
+                <div class="li">
+                    <li>Fr</li>
+                    <li><strong>10</strong></li>
+                </div>
+                <div class="li">
+                    <li>Sa</li>
+                    <li><strong>11</strong></li>
+                </div>
+                <div class="li">
+                    <li>Su</li>
+                    <li><strong>12</strong></li>
+                </div>
 
-                    <div class="li">
-                        <li>Mo</li>
-                        <li><strong>29</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Tu</li>
-                        <li><strong>30</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>We</li>
-                        <li><strong>1</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Th</li>
-                        <li><strong>2</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Fr</li>
-                        <li><strong>3</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Sa</li>
-                        <li><strong>4</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Su</li>
-                        <li><strong>5</strong></li>
-                    </div>
-
-                    <div class="li">
-                        <li>Mo</li>
-                        <li><strong>6</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Tu</li>
-                        <li><strong>7</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>We</li>
-                        <li><strong>8</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Th</li>
-                        <li><strong>9</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Fr</li>
-                        <li><strong>10</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Sa</li>
-                        <li><strong>11</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Su</li>
-                        <li><strong>12</strong></li>
-                    </div>
-
-                    <div class="li">
-                        <li>Mo</li>
-                        <li><strong>13</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>Tu</li>
-                        <li><strong>14</strong></li>
-                    </div>
-                    <div class="li">
-                        <li>We</li>
-                        <li><strong>15</strong></li>
-                    </div>
-                </ol>
-
+                <div class="li">
+                    <li>Mo</li>
+                    <li><strong>13</strong></li>
+                </div>
+                <div class="li">
+                    <li>Tu</li>
+                    <li><strong>14</strong></li>
+                </div>
+                <div class="li">
+                    <li>We</li>
+                    <li><strong>15</strong></li>
+                </div>
             </div>
 
         </div>
+
         <div class="task__side-content d-flex flex-row">
-<!--            <div class="task_content__lines">-->
-<!--                <hr class="task_content__lines_border-2">-->
-<!--            </div>-->
+            <!--            <div class="task_content__lines">-->
+            <!--                <hr class="task_content__lines_border-2">-->
+            <!--            </div>-->
             <aside class="task_side d-flex flex-column justify-content-start align-items-center gap-3">
                 <div class="row mt-5 mb-5">
                     <div class="col">
@@ -524,17 +536,17 @@
                 </p>
                 <div class="popup__activity_buttons row d-flex flex-row mt-3 mb-3 gap-4">
 
-                        <div class="col">
-                            <button class="popup__activity_buttons-comment  d-flex flex-row align-items-center justify-content-center">
-                                Comment
-                            </button>
-                        </div>
+                    <div class="col">
+                        <button class="popup__activity_buttons-comment  d-flex flex-row align-items-center justify-content-center">
+                            Comment
+                        </button>
+                    </div>
 
-                        <div class="col">
-                            <button class="popup__activity_buttons-cancel d-flex flex-row align-items-center justify-content-center">
-                                Cancel
-                            </button>
-                        </div>
+                    <div class="col">
+                        <button class="popup__activity_buttons-cancel d-flex flex-row align-items-center justify-content-center">
+                            Cancel
+                        </button>
+                    </div>
                 </div>
                 <div class="popup__activity_user">
                     <div class="popup__activity_container d-flex flex-row align-items-center mt-3 mb-3 gap-3">
@@ -562,7 +574,7 @@
                 </div>
             </div>
         </div>
-        <div class="popup__teams  pt-3" >
+        <div class="popup__teams  pt-3">
             <div class="row mt-5 mb-5">
                 <div class="col">
                     <div class="popup__teams_assignee d-flex flex-row align-items-center gap-3">
