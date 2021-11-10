@@ -11,11 +11,14 @@
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
-//@import "functions";
-//@import "variables";
-//@import "mixins/breakpoints";
-//@import "mixins/container";
-//@import "mixins/grid";
+
+
+//@import "node_modules/bootstrap/scss/functions.scss";
+//@import "node_modules/bootstrap/scss/variables.scss";
+//@import "node_modules/bootstrap/scss/mixins/breakpoints.scss";
+//@import "node_modules/bootstrap/scss/mixins/container.scss";
+//@import "node_modules/bootstrap/scss/mixins/grid.scss";
+
 
 
 html {
