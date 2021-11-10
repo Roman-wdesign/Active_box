@@ -182,7 +182,7 @@
                 June, 2021</p></div>
         </div>
 
-        <div class="task__calendar_months-main d-flex flex-column d-flex justify-content-end flex-row">
+        <div class="task__calendar_months-main">
 
             <div class="task__calendar_months-days d-flex flex-row justify-content-between align-items-center">
                 <div class="li">
@@ -474,15 +474,13 @@
                     <div class="task__events__void"></div>
                     <div class="task__events__void"></div>
                 </div>
-
-
             </div>
         </div>
     </div>
 </div>
 
 <!---------------------- Popup ----------------------------->
-<div class="popup d-none justify-content-center align-items-center position-fixed" id="popup">
+<div class="popup d-flex justify-content-center align-items-center position-fixed" id="popup">
     <div class="popup__body d-flex flex-row justify-content-between position-relative p-5">
         <div class="popup__content">
             <div class="popup__close position-absolute">
@@ -536,28 +534,28 @@
                 </p>
                 <div class="popup__activity_buttons row d-flex flex-row mt-3 mb-3 gap-4">
 
-                    <div class="col">
+                    <div class="col-3">
                         <button class="popup__activity_buttons-comment  d-flex flex-row align-items-center justify-content-center">
                             Comment
                         </button>
                     </div>
 
-                    <div class="col">
+                    <div class="col-3">
                         <button class="popup__activity_buttons-cancel d-flex flex-row align-items-center justify-content-center">
                             Cancel
                         </button>
                     </div>
                 </div>
                 <div class="popup__activity_user">
-                    <div class="popup__activity_container d-flex flex-row align-items-center mt-3 mb-3 gap-3">
-                        <div class="col">
+                    <div class="popup__activity_container d-flex flex-row align-items-center mt-3 mb-3 gap-3 ">
+                        <div class="col-1">
                             <div class="popup__activity_user-img"></div>
                         </div>
-                        <div class="col">
+                        <div class="col-2">
                             <div class="popup__activity_user-name"><strong>Robert Adamski</strong></div>
 
                         </div>
-                        <div class="col">
+                        <div class="col-3 justify-content-center">
                             <div class="popup__activity_user-time-ago">20 minutes ago</div>
                         </div>
                     </div>
@@ -579,7 +577,7 @@
                 <div class="col">
                     <div class="popup__teams_assignee d-flex flex-row align-items-center gap-3">
                         <p>Assignee</p>
-                        <div class="task__events_one_image">
+                        <div class="task__events_one_image d-flex flex-row">
                             <div class="task__placeholder"></div>
                             <div class="task__placeholder-1"></div>
                             <div class="task__placeholder-2"></div>
@@ -593,7 +591,7 @@
                 <div class="col">
                     <div class="popup__teams_reporter d-flex flex-row align-items-center gap-3">
                         <p>Reporter</p>
-                        <div class="task__events_one_image">
+                        <div class="task__events_one_image  d-flex flex-row">
                             <div class="task__placeholder"></div>
                             <div class="task__placeholder-1"></div>
                             <div class="task__placeholder-2"></div>
@@ -607,7 +605,7 @@
                 <div class="col">
                     <div class="popup__teams_sprint d-flex flex-row align-items-center pb-3 gap-5">
                         <p>Sprint</p>
-                        <div class="task__events_one_image">
+                        <div class="task__events_one_image  d-flex flex-row">
                             <p>Срочные работы</p>
                         </div>
                     </div>
@@ -617,7 +615,7 @@
                 <div class="col">
                     <div class="popup__teams_tempo d-flex flex-row align-items-center pb-3 gap-5">
                         <p>Tempo</p>
-                        <div class="task__events_one_image gap-3">
+                        <div class="task__events_one_image  d-flex flex-row gap-3">
                             <div class="popup__teams_yellow-circle"></div>
                             <strong class="popup__teams_strong-1">Medium</strong>
                         </div>
